@@ -1,0 +1,50 @@
+name: Sync local preview to Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/sync-local-pages.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout gh-pages
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: pages
+
+      - name: Download local preview files
+        env:
+          LOCAL_PREVIEW_URL: https://friendly-warthog-38.loca.lt
+        run: |
+          set -euo pipefail
+          for file in index.html app.js styles.css zh-books.js; do
+            curl --fail --location --retry 4 --retry-delay 5 "$LOCAL_PREVIEW_URL/$file" --output "pages/$file"
+          done
+          touch pages/.nojekyll
+          test -s pages/index.html
+          test -s pages/app.js
+          test -s pages/styles.css
+          test -s pages/zh-books.js
+          grep -q 'ZH_BOOK_PATCHES' pages/zh-books.js || grep -q 'const p=' pages/zh-books.js
+
+      - name: Commit local preview files
+        working-directory: pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html app.js styles.css zh-books.js .nojekyll
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Sync Pages with local preview"
+            git push
+          fi

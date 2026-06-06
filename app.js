@@ -109,10 +109,10 @@ function bindEvents() {
   document.querySelectorAll(".language-button").forEach((button) => {
     button.addEventListener("click", () => {
       const next = button.dataset.lang;
+      if (next === lang) return;
       const url = new URL(location.href);
       url.searchParams.set("lang", next);
-      history.pushState(null, "", `${url.pathname}${url.search}${location.hash}`);
-      loadLanguage(next);
+      location.assign(`${url.pathname}${url.search}${location.hash}`);
     });
   });
   els.search.addEventListener("input", () => renderLibrary());

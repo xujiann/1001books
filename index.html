@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1001 本书 | 人类文明书目地图</title>
+    <title>1001 Books | Library Atlas of Civilization</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -15,6 +15,10 @@
           <small>13 大类 / 143 小类 / 1001 本</small>
         </span>
       </a>
+      <div class="language-switch" aria-label="Language">
+        <button class="language-button" type="button" data-lang="en">EN</button>
+        <button class="language-button" type="button" data-lang="zh">中文</button>
+      </div>
       <nav class="nav" id="categoryNav" aria-label="大类导航"></nav>
     </header>
 
@@ -24,10 +28,10 @@
           <p class="kicker">A library atlas of civilization</p>
           <h1 id="pageTitle">1001 本书</h1>
           <p>
-            将人类文明的阅读遗产整理为 13 个大类。每个大类 11 个小类，每个小类 7 本书，首页从 Open Library 读取真实书目与封面。
+            A browsable atlas of 13 categories, 143 shelves, and 1001 books.
           </p>
           <p class="source-note">
-            数据与封面来自 <a href="https://openlibrary.org/developers/api" target="_blank" rel="noreferrer">Open Library API</a>。
+            Source: <a href="https://openlibrary.org/developers/api" target="_blank" rel="noreferrer">Open Library API</a>.
           </p>
         </div>
         <div class="stats" aria-label="书目统计">
@@ -81,13 +85,16 @@
       <article class="book">
         <a class="cover" target="_blank" rel="noreferrer">
           <img class="cover-image" alt="" />
+        </a>
+        <div class="book-meta">
           <span class="book-number"></span>
           <strong class="book-title"></strong>
           <span class="book-author"></span>
-        </a>
+        </div>
       </article>
     </template>
 
+    <script src="zh-books.js"></script>
     <script src="app.js"></script>
   </body>
 </html>

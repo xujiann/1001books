@@ -13,7 +13,7 @@ permissions:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - name: Checkout gh-pages
         uses: actions/checkout@v4
@@ -27,7 +27,7 @@ jobs:
         run: |
           set -euo pipefail
           for file in index.html app.js styles.css zh-books.js; do
-            curl --fail --location --retry 4 --retry-delay 5 "$LOCAL_PREVIEW_URL/$file" --output "pages/$file"
+            curl --fail --location --retry 8 --retry-all-errors --retry-delay 10 --connect-timeout 30 --max-time 180 -H 'bypass-tunnel-reminder: true' "$LOCAL_PREVIEW_URL/$file" --output "pages/$file"
           done
           touch pages/.nojekyll
           test -s pages/index.html

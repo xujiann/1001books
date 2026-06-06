@@ -2,11 +2,6 @@ name: Build Chinese books data
 
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - scripts/build-zh-pages-data.js
-      - .github/workflows/build-zh-books.yml
 
 permissions:
   contents: write

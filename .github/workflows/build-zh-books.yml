@@ -1,0 +1,48 @@
+name: Build Chinese books data
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/build-zh-pages-data.js
+      - .github/workflows/build-zh-books.yml
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          path: main
+
+      - name: Build zh-books.js
+        working-directory: main
+        run: node scripts/build-zh-pages-data.js
+
+      - name: Checkout gh-pages
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: pages
+
+      - name: Copy generated data
+        run: cp main/zh-books.js pages/zh-books.js
+
+      - name: Commit generated data
+        working-directory: pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add zh-books.js
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Build complete Chinese book data"
+            git push
+          fi

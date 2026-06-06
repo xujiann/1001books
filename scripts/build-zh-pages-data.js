@@ -29,6 +29,7 @@ const suggestCache = new Map();
 async function main() {
   const books = [];
   const seen = new Set();
+  let number = 1;
   for (const [category, shelves] of categories) {
     for (const shelf of shelves) {
       const shelfBooks = [];
@@ -55,6 +56,7 @@ async function main() {
       if (shelfBooks.length !== BOOKS_PER_SHELF) throw new Error(`${category}/${shelf} only found ${shelfBooks.length}`);
       books.push(...shelfBooks);
       console.log(`${category} / ${shelf}: ${books.length}/1001`);
+      number += BOOKS_PER_SHELF;
     }
   }
   writeCompressedPatch(books);
@@ -101,7 +103,7 @@ function writeCompressedPatch(books) {
   const runtime = `window.ZH_BOOK_PATCHES=${JSON.stringify(rows)}.map(([category,sub,slot,title,author,workUrl,cover])=>({category,sub,slot,title,author,workUrl,cover}));
 (function(){function a(b){const s=[...document.querySelectorAll(".category-section")].find(n=>n.querySelector("h2")?.textContent.trim()===b.category);if(!s)return false;const h=[...s.querySelectorAll(".shelf")].find(n=>n.querySelector("h3")?.textContent.trim()===b.sub);if(!h)return false;const c=h.querySelectorAll(".book")[b.slot];if(!c)return false;const l=c.querySelector(".cover"),t=c.querySelector(".book-title"),u=c.querySelector(".book-author");let i=c.querySelector(".cover-image");if(l){l.href=b.workUrl;l.classList.remove("is-placeholder")}if(t)t.textContent=b.title;if(u)u.textContent=b.author;if(b.cover){if(!i&&l){i=document.createElement("img");i.className="cover-image";i.loading="lazy";l.prepend(i)}if(i){i.src=b.cover;i.alt=b.title+" 封面"}}return true}function r(){if(new URLSearchParams(location.search).get("lang")!=="zh")return;if(!document.querySelector(".category-section"))return setTimeout(r,250);window.ZH_BOOK_PATCHES.forEach(a)}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",r);else r();})();`;
   const payload = zlib.gzipSync(Buffer.from(runtime), { level: 9 }).toString("base64");
-  const loader = `(function(){const p="${payload}";function b(s){const bin=atob(s),a=new Uint8Array(bin.length);for(let i=0;i<bin.length;i++)a[i]=bin.charCodeAt(i);return a}async function r(){const ds=new DecompressionStream("gzip");const t=await new Response(new Blob([b(p)]).stream().pipeThrough(ds)).text();(0,eval)(t)}r().catch(e=>console.error("Chinese book data failed to load",e));})();\n`;
+  const loader = `(function(){const p="${payload}";function b(s){const bin=atob(s),a=new Uint8Array(bin.length);for(let i=0;i<bin.length;i++)a[i]=bin.charCodeAt(i);return a}async function r(){const ds=new DecompressionStream("gzip");const t=await new Response(new Blob([b(p)]).stream().pipeThrough(ds)).text();(0,eval)(t);return window.ZH_BOOK_PATCHES||[]}window.ZH_BOOKS_READY=r().catch(e=>{console.error("Chinese book data failed to load",e);return []});})();\n`;
   fs.writeFileSync("zh-books.js", loader);
   console.log(`wrote zh-books.js with ${books.length} books, ${books.filter((book) => book.cover).length} covers`);
 }

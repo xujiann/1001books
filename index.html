@@ -1,27 +1,100 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>1001 Books | Library Atlas of Civilization</title>
-  <link rel="stylesheet" href="styles.css" />
-  <style>.topbar{grid-template-columns:minmax(220px,320px) auto 1fr}.language-switch{display:flex;gap:6px}.language-button{min-height:34px;padding:0 10px;font-size:13px}.language-button.is-active{border-color:var(--accent);color:#fff;background:var(--accent)}@media(max-width:1180px){.topbar{grid-template-columns:1fr}.language-switch{order:2}.nav{order:3}}</style>
-</head>
-<body>
-  <header class="topbar">
-    <a class="brand" href="#top" aria-label="Back to top"><span class="brand-mark">1001</span><span><strong>Library Atlas of Civilization</strong><small>13 categories / 143 shelves / 1001 books</small></span></a>
-    <div class="language-switch" aria-label="Language"><button class="language-button" type="button" data-lang="en">EN</button><button class="language-button" type="button" data-lang="zh">中文</button></div>
-    <nav class="nav" id="categoryNav" aria-label="Category navigation"></nav>
-  </header>
-  <main id="top">
-    <section class="hero" aria-labelledby="pageTitle"><div class="hero-copy"><p class="kicker">A library atlas of civilization</p><h1 id="pageTitle">1001 Books</h1><p>A browsable atlas of 13 categories, 143 shelves, and 1001 books.</p><p class="source-note">Source: <a href="https://openlibrary.org/developers/api" target="_blank" rel="noreferrer">Open Library API</a>.</p></div><div class="stats" aria-label="Book statistics"><span><strong id="categoryCount">13</strong> Categories</span><span><strong id="subCategoryCount">143</strong> Shelves</span><span><strong id="bookCount">1001</strong> Books</span></div></section>
-    <section class="controls" aria-label="Filter books"><label class="search"><span>Search</span><input id="searchInput" type="search" placeholder="Search title, author, category, or shelf" autocomplete="off" /></label><label class="select"><span>Category</span><select id="categorySelect"><option value="all">All categories</option></select></label><button id="resetButton" type="button">Reset</button></section>
-    <section class="library" id="library" aria-live="polite"></section>
-  </main>
-  <template id="categoryTemplate"><article class="category-section"><header class="category-header"><div><p class="category-index"></p><h2></h2></div><p class="category-description"></p></header><div class="shelves"></div></article></template>
-  <template id="shelfTemplate"><section class="shelf"><div class="shelf-title"><span class="shelf-number"></span><h3></h3></div><div class="books"></div></section></template>
-  <template id="bookTemplate"><article class="book"><a class="cover" target="_blank" rel="noreferrer"><img class="cover-image" alt="" /><span class="book-number"></span><strong class="book-title"></strong><span class="book-author"></span></a></article></template>
-  <script src="app.js"></script>
-  <script src="zh-books.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1001 Books | Library Atlas of Civilization</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="返回顶部">
+        <span class="brand-mark">1001</span>
+        <span>
+          <strong>人类文明书目地图</strong>
+          <small>13 大类 / 143 小类 / 1001 本</small>
+        </span>
+      </a>
+      <div class="language-switch" aria-label="Language">
+        <button class="language-button" type="button" data-lang="en">EN</button>
+        <button class="language-button" type="button" data-lang="zh">中文</button>
+      </div>
+      <nav class="nav" id="categoryNav" aria-label="大类导航"></nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="pageTitle">
+        <div class="hero-copy">
+          <p class="kicker">A library atlas of civilization</p>
+          <h1 id="pageTitle">1001 本书</h1>
+          <p>
+            A browsable atlas of 13 categories, 143 shelves, and 1001 books.
+          </p>
+          <p class="source-note">
+            Source: <a href="https://openlibrary.org/developers/api" target="_blank" rel="noreferrer">Open Library API</a>.
+          </p>
+        </div>
+        <div class="stats" aria-label="书目统计">
+          <span><strong id="categoryCount">13</strong> 大类</span>
+          <span><strong id="subCategoryCount">143</strong> 小类</span>
+          <span><strong id="bookCount">1001</strong> 本书</span>
+        </div>
+      </section>
+
+      <section class="controls" aria-label="筛选书目">
+        <label class="search">
+          <span>搜索</span>
+          <input id="searchInput" type="search" placeholder="输入书名、大类或小类" autocomplete="off" />
+        </label>
+        <label class="select">
+          <span>大类</span>
+          <select id="categorySelect">
+            <option value="all">全部大类</option>
+          </select>
+        </label>
+        <button id="resetButton" type="button">重置</button>
+      </section>
+
+      <section class="library" id="library" aria-live="polite"></section>
+    </main>
+
+    <template id="categoryTemplate">
+      <article class="category-section">
+        <header class="category-header">
+          <div>
+            <p class="category-index"></p>
+            <h2></h2>
+          </div>
+          <p class="category-description"></p>
+        </header>
+        <div class="shelves"></div>
+      </article>
+    </template>
+
+    <template id="shelfTemplate">
+      <section class="shelf">
+        <div class="shelf-title">
+          <span class="shelf-number"></span>
+          <h3></h3>
+        </div>
+        <div class="books"></div>
+      </section>
+    </template>
+
+    <template id="bookTemplate">
+      <article class="book">
+        <a class="cover" target="_blank" rel="noreferrer">
+          <img class="cover-image" alt="" />
+        </a>
+        <div class="book-meta">
+          <span class="book-number"></span>
+          <strong class="book-title"></strong>
+          <span class="book-author"></span>
+        </div>
+      </article>
+    </template>
+
+    <script src="zh-books.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>

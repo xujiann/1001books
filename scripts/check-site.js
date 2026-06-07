@@ -16,6 +16,7 @@ const SCRIPT_FILES = [
   "scripts/check-site.js",
   "scripts/publish-site.js",
   "scripts/review-zh-category.js",
+  "scripts/review-zh-all.js",
 ];
 
 function read(file) {

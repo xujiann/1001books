@@ -21,6 +21,7 @@ const FILES = [
   "scripts/check-site.js",
   "scripts/publish-site.js",
   "scripts/review-zh-category.js",
+  "scripts/review-zh-all.js",
 ];
 const SITE_URL = "https://xujiann.github.io/1001books/";
 

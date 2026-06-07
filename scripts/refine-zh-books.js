@@ -31,7 +31,15 @@ function normalize(value) {
 }
 
 function duplicateKey(book) {
-  return `${normalize(book.title)}|${normalize(authorBase(book.author))}`;
+  return titleKey(book.title);
+}
+
+function titleKey(value) {
+  return normalize(value)
+    .replace(/[（(].*?[）)]/g, "")
+    .replace(/上下册|上下卷|上下|全册|全本|全译本|套装.*|珍藏版|纪念版|经典版|精装|新版|全集|选集|导读|插图版/g, "")
+    .replace(/第[一二三四五六七八九十\d]+版/g, "")
+    .replace(/\d+册/g, "");
 }
 
 function urlKey(url) {

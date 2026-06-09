@@ -18,6 +18,7 @@ const FILES = [
   "scripts/refine-zh-books.js",
   "scripts/refine-zh-title-batch.js",
   "scripts/replace-zh-slot.js",
+  "scripts/set-zh-slot.js",
   "scripts/check-site.js",
   "scripts/publish-site.js",
   "scripts/review-zh-category.js",

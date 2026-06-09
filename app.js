@@ -205,7 +205,7 @@ function normalizeEnglishBook(doc, shelf, slot) {
     category: shelf.category,
     sub: shelf.name,
     title: doc.title,
-    author: doc.first_publish_year ? `${authors} ? ${doc.first_publish_year}` : authors,
+    author: doc.first_publish_year ? `${authors} / ${doc.first_publish_year}` : authors,
     cover: `${OPEN_LIBRARY_COVER}${doc.cover_i}-M.jpg`,
     workUrl: doc.key ? `https://openlibrary.org${doc.key}` : "https://openlibrary.org",
   };
@@ -335,11 +335,13 @@ function createBook(book) {
   const img = node.querySelector(".cover-image");
   link.href = book.workUrl || "#";
   link.setAttribute("aria-label", t.openLabel(book.title));
+  link.title = t.openLabel(book.title);
   link.classList.toggle("is-placeholder", !book.cover);
   img.alt = t.coverAlt(book.title);
   if (book.cover) {
     img.src = book.cover;
     img.loading = "lazy";
+    img.decoding = "async";
   } else {
     img.remove();
   }

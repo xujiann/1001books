@@ -64,6 +64,13 @@ node scripts\check-site.js --no-deploy
 ```powershell
 node scripts\review-zh-category.js 1
 node scripts\review-zh-category.js 2
+node scripts\review-zh-all.js
+```
+
+当豆瓣搜索接口不稳定，但已经人工核验好条目、作者、链接和封面时，可以直接替换某个槽位：
+
+```powershell
+node scripts\set-zh-slot.js 大类 小类 位置 书名 作者 豆瓣链接 封面链接
 ```
 
 精选阶段的目标：

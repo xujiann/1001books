@@ -338,6 +338,7 @@ function createBook(book) {
   link.title = t.openLabel(book.title);
   link.classList.toggle("is-placeholder", !book.cover);
   img.alt = t.coverAlt(book.title);
+  img.referrerPolicy = "no-referrer";
   if (book.cover) {
     img.src = book.cover;
     img.loading = "lazy";

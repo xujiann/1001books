@@ -16,6 +16,7 @@ const FILES = [
   "scripts/audit-zh-title-duplicates.js",
   "scripts/audit-zh-version-duplicates.js",
   "scripts/audit-zh-covers.js",
+  "scripts/cache-zh-covers.js",
   "scripts/build-zh-pages-data.js",
   "scripts/refine-zh-books.js",
   "scripts/refine-zh-title-batch.js",
@@ -26,6 +27,7 @@ const FILES = [
   "scripts/review-zh-category.js",
   "scripts/review-zh-all.js",
 ];
+const DIRECTORIES = ["covers/zh"];
 const SITE_URL = "https://xujiann.github.io/1001books/";
 
 function run(command, args, options = {}) {
@@ -84,6 +86,30 @@ function copy(file) {
   return true;
 }
 
+function copyDirectory(directory) {
+  const sourceRoot = path.join(ROOT, directory);
+  const targetRoot = path.join(DEPLOY, directory);
+  if (!fs.existsSync(sourceRoot)) return [];
+  const copied = [];
+  const stack = [sourceRoot];
+  while (stack.length) {
+    const current = stack.pop();
+    for (const entry of fs.readdirSync(current, { withFileTypes: true })) {
+      const source = path.join(current, entry.name);
+      if (entry.isDirectory()) {
+        stack.push(source);
+        continue;
+      }
+      const relative = path.relative(ROOT, source).replace(/\\/g, "/");
+      const target = path.join(targetRoot, path.relative(sourceRoot, source));
+      ensureDir(target);
+      fs.copyFileSync(source, target);
+      copied.push(relative);
+    }
+  }
+  return copied;
+}
+
 function sha(file, base) {
   return crypto.createHash("sha256").update(fs.readFileSync(path.join(base, file))).digest("hex");
 }
@@ -140,7 +166,7 @@ function main() {
   run(process.execPath, [path.join(ROOT, "scripts", "check-site.js"), "--no-deploy"]);
 
   console.log("Syncing files to .deploy-main...");
-  const copied = FILES.filter(copy);
+  const copied = [...FILES.filter(copy), ...DIRECTORIES.flatMap(copyDirectory)];
   copied.forEach((file) => console.log(`  ${file}`));
 
   console.log("Post-sync check...");

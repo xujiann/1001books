@@ -11,6 +11,7 @@ const SCRIPT_FILES = [
   "scripts/audit-zh-title-duplicates.js",
   "scripts/audit-zh-version-duplicates.js",
   "scripts/audit-zh-covers.js",
+  "scripts/cache-zh-covers.js",
   "scripts/build-zh-pages-data.js",
   "scripts/refine-zh-books.js",
   "scripts/refine-zh-title-batch.js",
@@ -70,7 +71,12 @@ function auditRows(rows) {
     shelfKeys.add(`${category}/${sub}`);
     if (!cover) missingCover += 1;
     if (/book-default-lpic\.gif/.test(String(cover || ""))) defaultCover += 1;
-    if (cover && !/^https?:\/\/.+\.(jpg|jpeg|png|webp)(\?.*)?$/i.test(cover)) malformedCover += 1;
+    if (
+      cover &&
+      !/^https?:\/\/.+\.(jpg|jpeg|png|webp|gif)(\?.*)?$/i.test(cover) &&
+      !/^covers\/zh\/\d{4}\.(jpg|jpeg|png|webp|gif)$/i.test(cover)
+    )
+      malformedCover += 1;
     if (!workUrl) missingUrl += 1;
     if (!Number.isInteger(slot) || slot < 0 || slot > 6) badSlot += 1;
 

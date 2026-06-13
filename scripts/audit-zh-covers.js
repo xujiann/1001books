@@ -53,18 +53,25 @@ function checkUrl(url) {
 async function main() {
   const rows = readRows();
   const missing = rows.filter((row) => !row[6]);
-  const malformed = rows.filter((row) => row[6] && !/^https?:\/\/.+\.(jpg|jpeg|png|webp)(\?.*)?$/i.test(row[6]));
+  const malformed = rows.filter(
+    (row) =>
+      row[6] &&
+      !/^https?:\/\/.+\.(jpg|jpeg|png|webp|gif)(\?.*)?$/i.test(row[6]) &&
+      !/^covers\/zh\/\d{4}\.(jpg|jpeg|png|webp|gif)$/i.test(row[6]),
+  );
   const nonDouban = rows.filter((row) => row[6] && !/doubanio\.com|douban\.com/.test(row[6]));
+  const localMissing = rows.filter((row) => /^covers\/zh\//.test(String(row[6] || "")) && !fs.existsSync(path.join(ROOT, row[6])));
 
   const result = {
     rows: rows.length,
     missingCover: missing.length,
     malformedCoverUrl: malformed.length,
+    localMissing: localMissing.length,
     nonDoubanCoverHost: nonDouban.length,
   };
 
   if (REMOTE) {
-    const targets = rows.filter((row) => row[6]).slice(0, Number.isFinite(LIMIT) ? LIMIT : rows.length);
+    const targets = rows.filter((row) => row[6] && /^https?:\/\//.test(row[6])).slice(0, Number.isFinite(LIMIT) ? LIMIT : rows.length);
     const broken = [];
     for (const row of targets) {
       const status = await checkUrl(row[6]);

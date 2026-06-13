@@ -87,12 +87,19 @@ function download(url, redirects = 0) {
   });
 }
 
+function proxyUrl(url) {
+  return `https://images.weserv.nl/?url=${encodeURIComponent(url)}`;
+}
+
 async function downloadWithRetries(url) {
   let last;
-  for (let attempt = 1; attempt <= ATTEMPTS; attempt += 1) {
-    last = await download(url);
-    if (last.ok) return last;
-    if (attempt < ATTEMPTS) await new Promise((resolve) => setTimeout(resolve, 750 * attempt));
+  const candidates = [url, proxyUrl(url)];
+  for (const candidate of candidates) {
+    for (let attempt = 1; attempt <= ATTEMPTS; attempt += 1) {
+      last = await download(candidate);
+      if (last.ok) return { ...last, sourceUrl: candidate };
+      if (attempt < ATTEMPTS) await new Promise((resolve) => setTimeout(resolve, 750 * attempt));
+    }
   }
   return last;
 }

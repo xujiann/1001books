@@ -38,5 +38,6 @@ jobs:
             echo "No cover cache changes"
           else
             git commit -m "Cache Chinese book covers"
+            git pull --rebase origin main
             git push
           fi

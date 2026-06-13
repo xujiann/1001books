@@ -1,0 +1,36 @@
+name: Cache Chinese covers
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  cache:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Cache cover images
+        run: node scripts/cache-zh-covers.js
+
+      - name: Check site data
+        run: node scripts/check-site.js --no-deploy
+
+      - name: Audit cover data
+        run: node scripts/audit-zh-covers.js
+
+      - name: Commit cached covers
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add zh-books.js covers/zh
+          if git diff --cached --quiet; then
+            echo "No cover cache changes"
+          else
+            git commit -m "Cache Chinese book covers"
+            git push
+          fi

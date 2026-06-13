@@ -8,6 +8,7 @@ const DEPLOY = path.join(ROOT, ".deploy-main");
 const GIT = path.join(ROOT, ".tools", "Git", "cmd", "git.exe");
 const FILES = [
   ".nojekyll",
+  ".github/workflows/cache-zh-covers.yml",
   "README.md",
   "index.html",
   "app.js",

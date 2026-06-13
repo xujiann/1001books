@@ -18,6 +18,7 @@ const FILES = [
   "scripts/audit-zh-version-duplicates.js",
   "scripts/audit-zh-covers.js",
   "scripts/cache-zh-covers.js",
+  "scripts/sync-cover-cache-from-deploy.js",
   "scripts/build-zh-pages-data.js",
   "scripts/refine-zh-books.js",
   "scripts/refine-zh-title-batch.js",

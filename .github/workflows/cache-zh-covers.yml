@@ -1,6 +1,12 @@
 name: Cache Chinese covers
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - "zh-books.js"
+      - "scripts/cache-zh-covers.js"
+      - ".github/workflows/cache-zh-covers.yml"
   workflow_dispatch:
 
 permissions:

@@ -7,8 +7,10 @@ const zlib = require("zlib");
 const ROOT = path.resolve(__dirname, "..");
 const COVER_DIR = path.join(ROOT, "covers", "zh");
 const FORCE = process.argv.includes("--force");
+const REQUIRE_ALL = process.argv.includes("--require-all");
 const LIMIT_ARG = process.argv.find((arg) => arg.startsWith("--limit="));
 const LIMIT = LIMIT_ARG ? Number(LIMIT_ARG.split("=")[1]) : Infinity;
+const ATTEMPTS = 3;
 
 function readRows() {
   const source = fs.readFileSync(path.join(ROOT, "zh-books.js"), "utf8");
@@ -66,7 +68,14 @@ function download(url, redirects = 0) {
         res.on("end", () => {
           const bytes = Buffer.concat(chunks);
           const type = String(res.headers["content-type"] || "");
-          resolve({ ok: /^image\//.test(type) && bytes.length > 200, bytes, type, status: res.statusCode });
+          const ok = /^image\//.test(type) && bytes.length > 200;
+          resolve({
+            ok,
+            bytes,
+            type,
+            status: res.statusCode,
+            error: ok ? "" : `invalid image response (${res.statusCode}, ${type || "no content-type"}, ${bytes.length} bytes)`,
+          });
         });
       },
     );
@@ -76,6 +85,16 @@ function download(url, redirects = 0) {
     });
     req.on("error", (error) => resolve({ ok: false, status: 0, error: error.message }));
   });
+}
+
+async function downloadWithRetries(url) {
+  let last;
+  for (let attempt = 1; attempt <= ATTEMPTS; attempt += 1) {
+    last = await download(url);
+    if (last.ok) return last;
+    if (attempt < ATTEMPTS) await new Promise((resolve) => setTimeout(resolve, 750 * attempt));
+  }
+  return last;
 }
 
 async function main() {
@@ -101,7 +120,7 @@ async function main() {
       continue;
     }
 
-    const result = await download(current);
+    const result = await downloadWithRetries(current);
     if (!result.ok) {
       failed.push({ number, title: row[3], cover: current, error: result.error || result.status });
       continue;
@@ -116,6 +135,9 @@ async function main() {
 
   writeRows(rows);
   console.log(JSON.stringify({ rows: rows.length, cached, reused, failed: failed.length, failedSamples: failed.slice(0, 20) }, null, 2));
+  if (REQUIRE_ALL && failed.length) {
+    throw new Error(`Failed to cache ${failed.length} covers.`);
+  }
 }
 
 main().catch((error) => {

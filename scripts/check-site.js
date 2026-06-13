@@ -9,6 +9,8 @@ const SKIP_DEPLOY = process.argv.includes("--no-deploy");
 const CORE_FILES = ["index.html", "app.js", "styles.css", "zh-books.js", ".nojekyll"];
 const SCRIPT_FILES = [
   "scripts/audit-zh-title-duplicates.js",
+  "scripts/audit-zh-version-duplicates.js",
+  "scripts/audit-zh-covers.js",
   "scripts/build-zh-pages-data.js",
   "scripts/refine-zh-books.js",
   "scripts/refine-zh-title-batch.js",
@@ -60,11 +62,15 @@ function auditRows(rows) {
   let missingCover = 0;
   let missingUrl = 0;
   let badSlot = 0;
+  let defaultCover = 0;
+  let malformedCover = 0;
 
   for (const row of rows) {
     const [category, sub, slot, title, author, workUrl, cover] = row;
     shelfKeys.add(`${category}/${sub}`);
     if (!cover) missingCover += 1;
+    if (/book-default-lpic\.gif/.test(String(cover || ""))) defaultCover += 1;
+    if (cover && !/^https?:\/\/.+\.(jpg|jpeg|png|webp)(\?.*)?$/i.test(cover)) malformedCover += 1;
     if (!workUrl) missingUrl += 1;
     if (!Number.isInteger(slot) || slot < 0 || slot > 6) badSlot += 1;
 
@@ -90,6 +96,8 @@ function auditRows(rows) {
     rows: rows.length,
     shelves: shelfKeys.size,
     missingCover,
+    defaultCover,
+    malformedCover,
     missingUrl,
     badSlot,
     duplicateTitleGroups: duplicateTitleGroups.length,
@@ -116,6 +124,47 @@ function versionAudit() {
   };
 }
 
+function normalizedVersionTitle(value) {
+  let title = String(value || "")
+    .normalize("NFKC")
+    .replace(/[《》「」『』“”"'\[\]【】（）(){}·•,，.。!！?？:：;；、\s-]/g, "")
+    .replace(/布拉克本全译本|插图珍藏版|珍藏版|纪念版|典藏版|经典版|精装版|新版|修订版|全译本|全本|全集|初版全集|故事集|故事选|选集|注析|今注|讲义|导读|全书|全[一二三四五六七八九十\d]+册|第[一二三四五六七八九十\d]+版|\d+周年/g, "")
+    .replace(/[上下中]册|[上下中]卷/g, "")
+    .replace(/[ⅠⅡⅢIVX]+$/i, "")
+    .replace(/[一二三四五六七八九十\d]+$/g, "")
+    .toLowerCase();
+  return title
+    .replace(/^荷马史诗/, "")
+    .replace(/安徒生童话.*/, "安徒生童话")
+    .replace(/格林童话.*/, "格林童话")
+    .replace(/三体.*/, "三体")
+    .replace(/设计心理学.*/, "设计心理学")
+    .replace(/第五项修炼.*/, "第五项修炼")
+    .replace(/第二性.*/, "第二性")
+    .replace(/小家越住越大.*/, "小家越住越大");
+}
+
+function auditVersionDuplicates(rows) {
+  const groups = new Map();
+  rows.forEach((row) => {
+    const keyTitle = normalizedVersionTitle(row[3]);
+    if (!keyTitle || keyTitle.length < 2) return;
+    const key = `${row[0]}|${row[1]}|${keyTitle}`;
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(row);
+  });
+  const duplicates = [...groups.values()].filter((items) => items.length > 1);
+  return {
+    versionDuplicateGroups: duplicates.length,
+    extraVersionDuplicateSlots: duplicates.reduce((sum, items) => sum + items.length - 1, 0),
+    versionDuplicateSamples: duplicates.slice(0, 10).map((items) => ({
+      title: items[0][3],
+      count: items.length,
+      locations: items.map((row) => `${row[0]}/${row[1]}#${Number(row[2]) + 1}`),
+    })),
+  };
+}
+
 function compareDeploy() {
   if (!fs.existsSync(DEPLOY)) return { exists: false, mismatches: CORE_FILES };
   const files = [...CORE_FILES, ...SCRIPT_FILES].filter((file) => exists(file) && fs.existsSync(path.join(DEPLOY, file)));
@@ -131,6 +180,7 @@ function statusLine(name, ok, detail) {
 function main() {
   const rows = readZhRows(ROOT);
   const rowAudit = auditRows(rows);
+  const versionRows = auditVersionDuplicates(rows);
   const versions = versionAudit();
   const deploy = SKIP_DEPLOY ? { skipped: true } : compareDeploy();
 
@@ -138,11 +188,14 @@ function main() {
     ["Chinese rows", rowAudit.rows === 1001, String(rowAudit.rows)],
     ["Chinese shelves", rowAudit.shelves === 143, String(rowAudit.shelves)],
     ["Missing covers", rowAudit.missingCover === 0, String(rowAudit.missingCover)],
+    ["Default placeholder covers", rowAudit.defaultCover === 0, String(rowAudit.defaultCover)],
+    ["Malformed cover urls", rowAudit.malformedCover === 0, String(rowAudit.malformedCover)],
     ["Missing urls", rowAudit.missingUrl === 0, String(rowAudit.missingUrl)],
     ["Book slots", rowAudit.badSlot === 0, String(rowAudit.badSlot)],
     ["Duplicate titles", rowAudit.duplicateTitleGroups === 0, `${rowAudit.duplicateTitleGroups} groups, ${rowAudit.extraTitleDuplicateSlots} extra slots`],
     ["Duplicate author+title", rowAudit.duplicateAuthorTitleGroups === 0, `${rowAudit.duplicateAuthorTitleGroups} groups`],
     ["Duplicate urls", rowAudit.duplicateUrlGroups === 0, `${rowAudit.duplicateUrlGroups} groups`],
+    ["Version duplicates", versionRows.versionDuplicateGroups === 0, `${versionRows.versionDuplicateGroups} groups, ${versionRows.extraVersionDuplicateSlots} extra slots`],
     ["Asset version count", versions.versions.length === 1, versions.versions.join(", ") || "none"],
     ...(SKIP_DEPLOY
       ? []
@@ -154,7 +207,7 @@ function main() {
   ];
 
   console.log("1001books site check");
-  console.log(JSON.stringify({ zh: rowAudit, assetVersions: versions.versions, deploy }, null, 2));
+  console.log(JSON.stringify({ zh: { ...rowAudit, ...versionRows }, assetVersions: versions.versions, deploy }, null, 2));
   console.log("");
   checks.forEach(([name, ok, detail]) => console.log(statusLine(name, ok, detail)));
 
@@ -162,6 +215,11 @@ function main() {
     console.log("");
     console.log("Duplicate samples:");
     rowAudit.duplicateSamples.forEach((item) => console.log(`- ${item.count}x ${item.title}: ${item.locations.join("; ")}`));
+  }
+  if (versionRows.versionDuplicateSamples.length > 0) {
+    console.log("");
+    console.log("Version duplicate samples:");
+    versionRows.versionDuplicateSamples.forEach((item) => console.log(`- ${item.count}x ${item.title}: ${item.locations.join("; ")}`));
   }
 
   const failed = checks.filter(([, ok]) => !ok);

@@ -4,6 +4,7 @@
 
 - 英文版：从 Open Library 加载真实书目和封面。
 - 中文版：使用站内 `zh-books.js` 静态数据，书目与封面来源于豆瓣读书条目。
+- 如果豆瓣条目只有默认占位图，允许使用 Open Library 的真实封面作为兜底。
 
 ## 本地预览
 
@@ -57,6 +58,8 @@ node scripts\publish-site.js --push --message "Publish site updates"
 
 ```powershell
 node scripts\check-site.js --no-deploy
+node scripts\audit-zh-covers.js
+node scripts\audit-zh-version-duplicates.js
 ```
 
 按大类导出精选审核清单：

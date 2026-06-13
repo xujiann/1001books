@@ -14,6 +14,8 @@ const FILES = [
   "styles.css",
   "zh-books.js",
   "scripts/audit-zh-title-duplicates.js",
+  "scripts/audit-zh-version-duplicates.js",
+  "scripts/audit-zh-covers.js",
   "scripts/build-zh-pages-data.js",
   "scripts/refine-zh-books.js",
   "scripts/refine-zh-title-batch.js",

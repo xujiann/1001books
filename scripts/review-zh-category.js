@@ -26,7 +26,7 @@ function flags(row, allRows) {
   const result = [];
   if (/导读|题库|试题|考试|教材编写组|练习|习题|课程|讲义|赏析|青少版|少儿版/.test(title + author)) result.push("edition-risk");
   if (/Douban|豆瓣读书/.test(author)) result.push("weak-author");
-  if (!/^https:\/\/book\.douban\.com\/subject\/\d+\/?/.test(url)) result.push("url-check");
+  if (!/^https:\/\/book\.douban\.com\/subject\/\d+\/?/.test(url) && !/^https:\/\/openlibrary\.org\/isbn\/\d+/i.test(url)) result.push("url-check");
   const sameAuthorCount = allRows.filter((item) => titleKey(item[4]) && titleKey(item[4]) === titleKey(author)).length;
   if (sameAuthorCount >= 4) result.push(`author-many:${sameAuthorCount}`);
   if (title.length > 24) result.push("long-title");

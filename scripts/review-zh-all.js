@@ -36,7 +36,7 @@ function rowFlags(row, allRows) {
 
   if (/导读|题库|试题|考试|教材编写组|练习|习题|课程|赏析|青少版|少儿版/.test(text)) flags.push("edition-risk");
   if (/Douban|豆瓣读书/.test(author)) flags.push("weak-author");
-  if (!/^https:\/\/book\.douban\.com\/subject\/\d+\/?/.test(String(workUrl || ""))) flags.push("url-check");
+  if (!/^https:\/\/book\.douban\.com\/subject\/\d+\/?/.test(String(workUrl || "")) && !/^https:\/\/openlibrary\.org\/isbn\/\d+/i.test(String(workUrl || ""))) flags.push("url-check");
   if (String(title || "").length > 28) flags.push("long-title");
 
   const a = clean(authorName(author));

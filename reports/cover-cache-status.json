@@ -1,0 +1,45 @@
+{
+  "generatedAt": "2026-06-14T13:53:51.479Z",
+  "rows": 1001,
+  "cached": 995,
+  "reused": 0,
+  "failed": 6,
+  "failedSamples": [
+    {
+      "number": "0024",
+      "title": "太平广记",
+      "cover": "https://covers.openlibrary.org/b/isbn/9787101007339-L.jpg",
+      "error": "invalid image response (200, image/gif, 43 bytes)"
+    },
+    {
+      "number": "0072",
+      "title": "世说新语",
+      "cover": "https://covers.openlibrary.org/b/isbn/9787101058492-L.jpg",
+      "error": "invalid image response (200, image/gif, 43 bytes)"
+    },
+    {
+      "number": "0073",
+      "title": "古文观止",
+      "cover": "https://covers.openlibrary.org/b/isbn/9787101000293-L.jpg",
+      "error": "invalid image response (200, image/gif, 43 bytes)"
+    },
+    {
+      "number": "0076",
+      "title": "文选",
+      "cover": "https://covers.openlibrary.org/b/isbn/9787532517195-L.jpg",
+      "error": "invalid image response (200, image/gif, 43 bytes)"
+    },
+    {
+      "number": "0161",
+      "title": "坛经",
+      "cover": "https://covers.openlibrary.org/b/isbn/9787101112330-L.jpg",
+      "error": "invalid image response (200, image/gif, 43 bytes)"
+    },
+    {
+      "number": "0439",
+      "title": "生命的多样性",
+      "cover": "https://covers.openlibrary.org/b/isbn/9780393310473-L.jpg",
+      "error": "invalid image response (200, image/gif, 43 bytes)"
+    }
+  ]
+}

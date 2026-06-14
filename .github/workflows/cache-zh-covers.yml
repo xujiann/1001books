@@ -31,6 +31,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Build ISBN candidates
+        run: node scripts/build-zh-isbn-data.js --online
+
+      - name: Cache covers by ISBN
+        run: node scripts/cache-zh-covers-by-isbn.js
+
       - name: Cache cover images
         run: node scripts/cache-zh-covers.js --report
 
@@ -44,7 +50,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add zh-books.js covers/zh reports/cover-cache-status.json
+          git add zh-books.js covers/zh reports/cover-cache-status.json zh-data/zh-isbns.json
           if git diff --cached --quiet; then
             echo "No cover cache changes"
           else

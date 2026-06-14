@@ -340,6 +340,7 @@ function createBook(book) {
   img.alt = t.coverAlt(book.title);
   img.referrerPolicy = "no-referrer";
   if (book.cover) {
+    installCoverFallback(img, link, book.cover);
     img.src = book.cover;
     img.loading = "lazy";
     img.decoding = "async";
@@ -350,6 +351,30 @@ function createBook(book) {
   node.querySelector(".book-title").textContent = book.title;
   node.querySelector(".book-author").textContent = book.author || "";
   return node;
+}
+
+function proxiedCoverUrl(url) {
+  if (!/^https?:\/\//.test(url) || url.includes("images.weserv.nl")) return "";
+  return `https://images.weserv.nl/?url=${encodeURIComponent(url.replace(/^https?:\/\//, ""))}`;
+}
+
+function installCoverFallback(img, link, originalUrl) {
+  const fallback = proxiedCoverUrl(originalUrl);
+  if (!fallback) return;
+  img.dataset.fallbackCover = fallback;
+  img.addEventListener(
+    "error",
+    () => {
+      if (img.dataset.fallbackUsed === "true") {
+        link.classList.add("is-placeholder");
+        return;
+      }
+      img.dataset.fallbackUsed = "true";
+      img.referrerPolicy = "no-referrer";
+      img.src = fallback;
+    },
+    { once: false },
+  );
 }
 
 function cat(name, description, subs) {

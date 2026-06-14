@@ -89,12 +89,13 @@ function download(url, redirects = 0) {
 }
 
 function proxyUrl(url) {
-  return `https://images.weserv.nl/?url=${encodeURIComponent(url)}`;
+  if (!/^https?:\/\//.test(url) || url.includes("images.weserv.nl")) return "";
+  return `https://images.weserv.nl/?url=${encodeURIComponent(url.replace(/^https?:\/\//, ""))}`;
 }
 
 async function downloadWithRetries(url) {
   let last;
-  const candidates = [url, proxyUrl(url)];
+  const candidates = [url, proxyUrl(url)].filter(Boolean);
   for (const candidate of candidates) {
     for (let attempt = 1; attempt <= ATTEMPTS; attempt += 1) {
       last = await download(candidate);

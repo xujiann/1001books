@@ -367,9 +367,11 @@ function installCoverFallback(img, link, originalUrl) {
     () => {
       if (img.dataset.fallbackUsed === "true") {
         link.classList.add("is-placeholder");
+        img.hidden = true;
         return;
       }
       img.dataset.fallbackUsed = "true";
+      link.dataset.coverFallback = "proxy";
       img.referrerPolicy = "no-referrer";
       img.src = fallback;
     },

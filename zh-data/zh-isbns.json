@@ -1,11 +1,10 @@
 {
   "summary": {
-    "generatedAt": "2026-06-14T14:30:21.622Z",
+    "generatedAt": "2026-06-14T14:40:07.947Z",
     "rows": 1001,
     "known": 24,
     "candidates": 0,
-    "missing": 977,
-    "cachedByIsbn": 0
+    "missing": 977
   },
   "books": [
     {

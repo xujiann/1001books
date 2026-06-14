@@ -35,7 +35,7 @@ jobs:
         run: node scripts/build-zh-isbn-data.js --online
 
       - name: Cache covers by ISBN
-        run: node scripts/cache-zh-covers-by-isbn.js
+        run: node scripts/cache-zh-covers-by-isbn.js --limit=80
 
       - name: Cache cover images
         run: node scripts/cache-zh-covers.js --report

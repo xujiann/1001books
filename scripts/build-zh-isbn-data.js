@@ -7,6 +7,7 @@ const OUTPUT = path.join(ROOT, "zh-data", "zh-isbns.json");
 const LIMIT_ARG = process.argv.find((arg) => arg.startsWith("--limit="));
 const LIMIT = LIMIT_ARG ? Number(LIMIT_ARG.split("=")[1]) : Infinity;
 const ONLINE = process.argv.includes("--online");
+const GOOGLE_BOOKS_API_KEY = process.env.GOOGLE_BOOKS_API_KEY || "";
 
 function readRows() {
   const source = fs.readFileSync(path.join(ROOT, "zh-books.js"), "utf8");
@@ -75,7 +76,9 @@ async function queryOpenLibrary(book) {
 
 async function queryGoogleBooks(book) {
   const query = [`intitle:${book.title}`, book.author ? `inauthor:${book.author}` : ""].filter(Boolean).join("+");
-  const data = await fetchJson(`https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(query)}&maxResults=5`);
+  const params = new URLSearchParams({ q: query, maxResults: "5" });
+  if (GOOGLE_BOOKS_API_KEY) params.set("key", GOOGLE_BOOKS_API_KEY);
+  const data = await fetchJson(`https://www.googleapis.com/books/v1/volumes?${params.toString()}`);
   for (const item of data.items || []) {
     const identifiers = item.volumeInfo?.industryIdentifiers || [];
     const isbn13 = identifiers.find((id) => id.type === "ISBN_13")?.identifier;

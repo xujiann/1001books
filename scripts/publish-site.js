@@ -18,6 +18,7 @@ const FILES = [
   "scripts/audit-zh-version-duplicates.js",
   "scripts/audit-zh-covers.js",
   "scripts/cache-zh-covers.js",
+  "scripts/check-cover-cache.js",
   "scripts/sync-cover-cache-from-deploy.js",
   "scripts/build-zh-pages-data.js",
   "scripts/refine-zh-books.js",
@@ -29,7 +30,7 @@ const FILES = [
   "scripts/review-zh-category.js",
   "scripts/review-zh-all.js",
 ];
-const DIRECTORIES = ["covers/zh"];
+const DIRECTORIES = ["covers/zh", "reports"];
 const SITE_URL = "https://xujiann.github.io/1001books/";
 
 function run(command, args, options = {}) {

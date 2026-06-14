@@ -6,6 +6,7 @@ const ROOT = path.resolve(__dirname, "..");
 const DEPLOY = path.join(ROOT, ".deploy-main");
 const GIT = path.join(ROOT, ".tools", "Git", "cmd", "git.exe");
 const COVER_DIR = path.join("covers", "zh");
+const REPORT_DIR = "reports";
 
 function run(command, args, options = {}) {
   const result = cp.spawnSync(command, args, {
@@ -65,9 +66,13 @@ function main() {
   git(["merge", "--ff-only", "origin/main"]);
   copyFile("zh-books.js");
   const covers = copyDirectory(COVER_DIR);
+  let reports = 0;
+  if (fs.existsSync(path.join(DEPLOY, REPORT_DIR))) {
+    reports = copyDirectory(REPORT_DIR);
+  }
   run(process.execPath, [path.join(ROOT, "scripts", "check-site.js"), "--no-deploy"]);
   run(process.execPath, [path.join(ROOT, "scripts", "audit-zh-covers.js")]);
-  console.log(JSON.stringify({ syncedCovers: covers }, null, 2));
+  console.log(JSON.stringify({ syncedCovers: covers, syncedReports: reports }, null, 2));
 }
 
 main();

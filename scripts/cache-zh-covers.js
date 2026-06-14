@@ -8,6 +8,7 @@ const ROOT = path.resolve(__dirname, "..");
 const COVER_DIR = path.join(ROOT, "covers", "zh");
 const FORCE = process.argv.includes("--force");
 const REQUIRE_ALL = process.argv.includes("--require-all");
+const REPORT = process.argv.includes("--report");
 const LIMIT_ARG = process.argv.find((arg) => arg.startsWith("--limit="));
 const LIMIT = LIMIT_ARG ? Number(LIMIT_ARG.split("=")[1]) : Infinity;
 const ATTEMPTS = 3;
@@ -106,6 +107,7 @@ async function downloadWithRetries(url) {
 
 async function main() {
   fs.mkdirSync(COVER_DIR, { recursive: true });
+  fs.mkdirSync(path.join(ROOT, "reports"), { recursive: true });
   const rows = readRows();
   let cached = 0;
   let reused = 0;
@@ -141,7 +143,18 @@ async function main() {
   }
 
   writeRows(rows);
-  console.log(JSON.stringify({ rows: rows.length, cached, reused, failed: failed.length, failedSamples: failed.slice(0, 20) }, null, 2));
+  const summary = {
+    generatedAt: new Date().toISOString(),
+    rows: rows.length,
+    cached,
+    reused,
+    failed: failed.length,
+    failedSamples: failed.slice(0, 20),
+  };
+  if (REPORT) {
+    fs.writeFileSync(path.join(ROOT, "reports", "cover-cache-status.json"), `${JSON.stringify(summary, null, 2)}\n`);
+  }
+  console.log(JSON.stringify(summary, null, 2));
   if (REQUIRE_ALL && failed.length) {
     throw new Error(`Failed to cache ${failed.length} covers.`);
   }

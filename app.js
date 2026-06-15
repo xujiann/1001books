@@ -134,6 +134,7 @@ async function loadLanguage(nextLang) {
   if (lang === "zh") {
     if (window.ZH_BOOKS_READY) await window.ZH_BOOKS_READY;
     books = Array.isArray(window.ZH_BOOKS) && window.ZH_BOOKS.length === expectedBookCount() ? window.ZH_BOOKS : buildChinesePlaceholderBooks();
+    books = await applyChineseIsbns(books);
     renderLibrary(ui.zh.loaded(books.length));
     return;
   }
@@ -209,6 +210,21 @@ function normalizeEnglishBook(doc, shelf, slot) {
     cover: `${OPEN_LIBRARY_COVER}${doc.cover_i}-M.jpg`,
     workUrl: doc.key ? `https://openlibrary.org${doc.key}` : "https://openlibrary.org",
   };
+}
+
+async function applyChineseIsbns(sourceBooks) {
+  try {
+    const response = await fetch(`zh-data/zh-isbns.json?v=${Date.now()}`, { cache: "no-store" });
+    if (!response.ok) return sourceBooks;
+    const data = await response.json();
+    const byNumber = new Map((data.books || []).map((book) => [String(book.number), book]));
+    return sourceBooks.map((book) => {
+      const isbnRecord = byNumber.get(String(book.number).padStart(4, "0"));
+      return isbnRecord?.isbn ? { ...book, isbn: isbnRecord.isbn } : book;
+    });
+  } catch {
+    return sourceBooks;
+  }
 }
 
 function buildChinesePlaceholderBooks() {
@@ -364,7 +380,7 @@ function isbnFromUrl(url) {
 }
 
 function coverFallbacks(book) {
-  const isbn = isbnFromUrl(book.workUrl) || isbnFromUrl(book.cover);
+  const isbn = book.isbn || isbnFromUrl(book.workUrl) || isbnFromUrl(book.cover);
   return [
     isbn ? `https://covers.openlibrary.org/b/isbn/${isbn}-L.jpg` : "",
     proxiedCoverUrl(book.cover),

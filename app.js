@@ -340,7 +340,7 @@ function createBook(book) {
   img.alt = t.coverAlt(book.title);
   img.referrerPolicy = "no-referrer";
   if (book.cover) {
-    installCoverFallback(img, link, book.cover);
+    installCoverFallback(img, link, book);
     img.src = book.cover;
     img.loading = "lazy";
     img.decoding = "async";
@@ -358,20 +358,37 @@ function proxiedCoverUrl(url) {
   return `https://images.weserv.nl/?url=${encodeURIComponent(url.replace(/^https?:\/\//, ""))}`;
 }
 
-function installCoverFallback(img, link, originalUrl) {
-  const fallback = proxiedCoverUrl(originalUrl);
-  if (!fallback) return;
-  img.dataset.fallbackCover = fallback;
+function isbnFromUrl(url) {
+  const match = String(url || "").match(/\/isbn\/([0-9Xx-]+)/i);
+  return match ? match[1].replace(/[^0-9Xx]/g, "").toUpperCase() : "";
+}
+
+function coverFallbacks(book) {
+  const isbn = isbnFromUrl(book.workUrl) || isbnFromUrl(book.cover);
+  return [
+    isbn ? `https://covers.openlibrary.org/b/isbn/${isbn}-L.jpg` : "",
+    proxiedCoverUrl(book.cover),
+  ].filter((url, index, all) => url && all.indexOf(url) === index && url !== book.cover);
+}
+
+function installCoverFallback(img, link, book) {
+  const fallbacks = coverFallbacks(book);
+  if (!fallbacks.length) return;
+  img.dataset.fallbackCover = fallbacks[0];
+  img.dataset.fallbackIndex = "0";
   img.addEventListener(
     "error",
     () => {
-      if (img.dataset.fallbackUsed === "true") {
+      const index = Number(img.dataset.fallbackIndex || 0);
+      const fallback = fallbacks[index];
+      if (!fallback) {
         link.classList.add("is-placeholder");
         img.hidden = true;
         return;
       }
       img.dataset.fallbackUsed = "true";
-      link.dataset.coverFallback = "proxy";
+      img.dataset.fallbackIndex = String(index + 1);
+      link.dataset.coverFallback = fallback.includes("openlibrary.org") ? "isbn" : "proxy";
       img.referrerPolicy = "no-referrer";
       img.src = fallback;
     },

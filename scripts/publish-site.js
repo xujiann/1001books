@@ -21,6 +21,7 @@ const FILES = [
   "scripts/cache-zh-covers-by-isbn.js",
   "scripts/check-cover-cache.js",
   "scripts/build-zh-isbn-data.js",
+  "scripts/apply-zh-isbns.js",
   "scripts/sync-cover-cache-from-deploy.js",
   "scripts/build-zh-pages-data.js",
   "scripts/refine-zh-books.js",

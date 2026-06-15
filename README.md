@@ -62,6 +62,16 @@ node scripts\audit-zh-covers.js
 node scripts\audit-zh-version-duplicates.js
 ```
 
+ISBN cover workflow:
+
+```powershell
+node scripts\build-zh-isbn-data.js --online --query-limit=80
+node scripts\apply-zh-isbns.js .\isbn-batch.csv
+node scripts\cache-zh-covers-by-isbn.js --limit=80
+```
+
+`isbn-batch.csv` uses `number,isbn,source` columns.
+
 按大类导出精选审核清单：
 
 ```powershell

@@ -6,7 +6,10 @@ const ROOT = path.resolve(__dirname, "..");
 const OUTPUT = path.join(ROOT, "zh-data", "zh-isbns.json");
 const LIMIT_ARG = process.argv.find((arg) => arg.startsWith("--limit="));
 const LIMIT = LIMIT_ARG ? Number(LIMIT_ARG.split("=")[1]) : Infinity;
+const QUERY_LIMIT_ARG = process.argv.find((arg) => arg.startsWith("--query-limit="));
+const QUERY_LIMIT = QUERY_LIMIT_ARG ? Number(QUERY_LIMIT_ARG.split("=")[1]) : Infinity;
 const ONLINE = process.argv.includes("--online");
+const FORCE = process.argv.includes("--force");
 const GOOGLE_BOOKS_API_KEY = process.env.GOOGLE_BOOKS_API_KEY || "";
 
 function readRows() {
@@ -53,10 +56,48 @@ async function fetchJson(url) {
   return response.json();
 }
 
+async function fetchText(url) {
+  const response = await fetch(url, {
+    headers: {
+      "User-Agent": "Mozilla/5.0",
+      Referer: "https://book.douban.com/",
+      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    },
+  });
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  return response.text();
+}
+
+function cleanAuthor(author) {
+  return String(author || "")
+    .replace(/\[[^\]]+\]|\([^)]+\)|（[^）]+）/g, " ")
+    .replace(/\s*\/\s*\d{4}.*$/, "")
+    .replace(/[著编译校注]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+async function queryDouban(book) {
+  if (!/^https:\/\/book\.douban\.com\/subject\/\d+\/?/.test(book.workUrl || "")) return null;
+  const html = await fetchText(book.workUrl);
+  const match =
+    html.match(/ISBN:\s*([0-9Xx-]{10,17})/) ||
+    html.match(/<span[^>]*>\s*ISBN:\s*<\/span>\s*([0-9Xx-]{10,17})/i);
+  const isbn = normalizeIsbn(match?.[1] || "");
+  if (!isbn) return null;
+  return {
+    isbn,
+    source: "douban-subject",
+    cover: openLibraryCover(isbn),
+    matchedTitle: book.title,
+    workUrl: book.workUrl,
+  };
+}
+
 async function queryOpenLibrary(book) {
   const params = new URLSearchParams({
     title: book.title,
-    author: book.author || "",
+    author: cleanAuthor(book.author),
     limit: "5",
     fields: "title,author_name,isbn,cover_i,key",
   });
@@ -75,7 +116,8 @@ async function queryOpenLibrary(book) {
 }
 
 async function queryGoogleBooks(book) {
-  const query = [`intitle:${book.title}`, book.author ? `inauthor:${book.author}` : ""].filter(Boolean).join("+");
+  const author = cleanAuthor(book.author);
+  const query = [`intitle:${book.title}`, author ? `inauthor:${author}` : ""].filter(Boolean).join(" ");
   const params = new URLSearchParams({ q: query, maxResults: "5" });
   if (GOOGLE_BOOKS_API_KEY) params.set("key", GOOGLE_BOOKS_API_KEY);
   const data = await fetchJson(`https://www.googleapis.com/books/v1/volumes?${params.toString()}`);
@@ -99,7 +141,7 @@ async function queryGoogleBooks(book) {
 async function enrich(book) {
   if (!ONLINE) return null;
   try {
-    return (await queryOpenLibrary(book)) || (await queryGoogleBooks(book));
+    return (await queryDouban(book)) || (await queryOpenLibrary(book)) || (await queryGoogleBooks(book));
   } catch (error) {
     return { error: error.message };
   }
@@ -108,7 +150,10 @@ async function enrich(book) {
 async function main() {
   fs.mkdirSync(path.dirname(OUTPUT), { recursive: true });
   const rows = readRows();
+  const existing = fs.existsSync(OUTPUT) ? JSON.parse(fs.readFileSync(OUTPUT, "utf8")) : { books: [] };
+  const existingByNumber = new Map((existing.books || []).map((book) => [String(book.number), book]));
   const result = [];
+  let queryCount = 0;
 
   for (let index = 0; index < rows.length && index < LIMIT; index += 1) {
     const row = rows[index];
@@ -117,19 +162,28 @@ async function main() {
     const workUrl = row[5];
     const cover = row[6];
     const directIsbn = isbnFromText(workUrl) || isbnFromText(cover);
+    const previous = existingByNumber.get(String(index + 1).padStart(4, "0"));
     const record = {
       ...location(row, index),
       title,
       author,
       workUrl,
       currentCover: cover,
-      isbn: directIsbn,
-      isbnSource: directIsbn ? "existing-url" : "",
-      coverCandidates: directIsbn ? [openLibraryCover(directIsbn)] : [],
-      status: directIsbn ? "known" : "missing",
+      isbn: directIsbn || (!FORCE ? previous?.isbn || "" : ""),
+      isbnSource: directIsbn ? "existing-url" : !FORCE ? previous?.isbnSource || "" : "",
+      coverCandidates: [],
+      status: directIsbn || (!FORCE && previous?.isbn) ? "known" : "missing",
     };
+    if (record.isbn) {
+      const candidates = [previous?.coverCandidates || [], openLibraryCover(record.isbn)].flat().filter(Boolean);
+      record.coverCandidates = Array.from(new Set(candidates));
+      if (previous?.cachedCover) record.cachedCover = previous.cachedCover;
+      if (previous?.matchedTitle) record.matchedTitle = previous.matchedTitle;
+      if (previous?.matchedUrl) record.matchedUrl = previous.matchedUrl;
+    }
 
-    if (!directIsbn) {
+    if (!record.isbn && queryCount < QUERY_LIMIT) {
+      queryCount += 1;
       const enriched = await enrich({ title, author });
       if (enriched?.isbn) {
         record.isbn = enriched.isbn;

@@ -1,10 +1,153 @@
 {
   "summary": {
-    "generatedAt": "2026-06-15T14:31:54.456Z",
+    "generatedAt": "2026-06-18T14:28:59.066Z",
     "rows": 1001,
-    "known": 24,
+    "known": 126,
     "candidates": 0,
-    "missing": 977
+    "missing": 875,
+    "query": {
+      "attempted": 40,
+      "found": 0,
+      "sources": {
+        "douban-subject": {
+          "attempted": 40,
+          "found": 0,
+          "errors": 40
+        },
+        "openlibrary-search": {
+          "attempted": 40,
+          "found": 0,
+          "errors": 40
+        },
+        "google-books": {
+          "attempted": 40,
+          "found": 0,
+          "errors": 40
+        }
+      },
+      "errors": [
+        {
+          "number": "0025",
+          "title": "搜神記",
+          "source": "douban-subject",
+          "error": "HTTP 403"
+        },
+        {
+          "number": "0025",
+          "title": "搜神記",
+          "source": "openlibrary-search",
+          "error": "fetch failed"
+        },
+        {
+          "number": "0025",
+          "title": "搜神記",
+          "source": "google-books",
+          "error": "fetch failed"
+        },
+        {
+          "number": "0032",
+          "title": "中国古代寓言",
+          "source": "douban-subject",
+          "error": "HTTP 403"
+        },
+        {
+          "number": "0032",
+          "title": "中国古代寓言",
+          "source": "openlibrary-search",
+          "error": "fetch failed"
+        },
+        {
+          "number": "0032",
+          "title": "中国古代寓言",
+          "source": "google-books",
+          "error": "fetch failed"
+        },
+        {
+          "number": "0052",
+          "title": "故事新编",
+          "source": "douban-subject",
+          "error": "HTTP 403"
+        },
+        {
+          "number": "0052",
+          "title": "故事新编",
+          "source": "openlibrary-search",
+          "error": "fetch failed"
+        },
+        {
+          "number": "0052",
+          "title": "故事新编",
+          "source": "google-books",
+          "error": "fetch failed"
+        },
+        {
+          "number": "0113",
+          "title": "耶鲁大学公开课 : 政治哲学",
+          "source": "douban-subject",
+          "error": "HTTP 403"
+        },
+        {
+          "number": "0113",
+          "title": "耶鲁大学公开课 : 政治哲学",
+          "source": "openlibrary-search",
+          "error": "fetch failed"
+        },
+        {
+          "number": "0113",
+          "title": "耶鲁大学公开课 : 政治哲学",
+          "source": "google-books",
+          "error": "fetch failed"
+        },
+        {
+          "number": "0114",
+          "title": "牛津大学哲学通识课：政治哲学",
+          "source": "douban-subject",
+          "error": "HTTP 403"
+        },
+        {
+          "number": "0114",
+          "title": "牛津大学哲学通识课：政治哲学",
+          "source": "openlibrary-search",
+          "error": "fetch failed"
+        },
+        {
+          "number": "0114",
+          "title": "牛津大学哲学通识课：政治哲学",
+          "source": "google-books",
+          "error": "fetch failed"
+        },
+        {
+          "number": "0115",
+          "title": "当代政治哲学",
+          "source": "douban-subject",
+          "error": "HTTP 403"
+        },
+        {
+          "number": "0115",
+          "title": "当代政治哲学",
+          "source": "openlibrary-search",
+          "error": "fetch failed"
+        },
+        {
+          "number": "0115",
+          "title": "当代政治哲学",
+          "source": "google-books",
+          "error": "fetch failed"
+        },
+        {
+          "number": "0116",
+          "title": "政治哲学导论",
+          "source": "douban-subject",
+          "error": "HTTP 403"
+        },
+        {
+          "number": "0116",
+          "title": "政治哲学导论",
+          "source": "openlibrary-search",
+          "error": "fetch failed"
+        }
+      ]
+    }
   },
   "books": [
     {
@@ -16,10 +159,14 @@
       "author": "[德]古斯塔夫·施瓦布 / 2010",
       "workUrl": "https://book.douban.com/subject/4872918/",
       "currentCover": "https://img1.doubanio.com/view/subject/l/public/s4505790.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787544711319",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787544711319-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "希腊古典神话",
+      "matchedUrl": "https://book.douban.com/subject/4872918/"
     },
     {
       "number": "0002",
@@ -30,10 +177,14 @@
       "author": "(墨) 埃尔米洛·阿夫雷乌·戈麦斯 / 1996",
       "workUrl": "https://book.douban.com/subject/2002993/",
       "currentCover": "https://img9.doubanio.com/view/subject/l/public/s3103256.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787540719357",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787540719357-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "波波尔·乌",
+      "matchedUrl": "https://book.douban.com/subject/2002993/"
     },
     {
       "number": "0003",
@@ -44,10 +195,14 @@
       "author": "[英]罗伯特·格雷夫斯 / 2022",
       "workUrl": "https://book.douban.com/subject/36084730/",
       "currentCover": "https://img9.doubanio.com/view/subject/l/public/s34303154.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787572607974",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787572607974-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "希腊神话（全三册）",
+      "matchedUrl": "https://book.douban.com/subject/36084730/"
     },
     {
       "number": "0004",
@@ -58,10 +213,14 @@
       "author": "[德] 古斯塔夫·施瓦布 / 2018",
       "workUrl": "https://book.douban.com/subject/30282729/",
       "currentCover": "https://img9.doubanio.com/view/subject/l/public/s29827946.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787020131358",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787020131358-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "希腊神话和传说",
+      "matchedUrl": "https://book.douban.com/subject/30282729/"
     },
     {
       "number": "0005",
@@ -72,10 +231,14 @@
       "author": "[英] 凯文·克罗斯利-霍兰 / 2023",
       "workUrl": "https://book.douban.com/subject/35627748/",
       "currentCover": "https://img3.doubanio.com/view/subject/l/public/s34371937.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787572604218",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787572604218-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "北欧神话全书",
+      "matchedUrl": "https://book.douban.com/subject/35627748/"
     },
     {
       "number": "0006",
@@ -86,10 +249,14 @@
       "author": "[美] 伊迪丝·汉密尔顿 / 2023",
       "workUrl": "https://book.douban.com/subject/35627751/",
       "currentCover": "https://img3.doubanio.com/view/subject/l/public/s34319072.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787572604225",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787572604225-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "希腊罗马神话全书",
+      "matchedUrl": "https://book.douban.com/subject/35627751/"
     },
     {
       "number": "0007",
@@ -100,10 +267,14 @@
       "author": "任才峰/绘 / 2023",
       "workUrl": "https://book.douban.com/subject/36315215/",
       "currentCover": "https://img3.doubanio.com/view/subject/l/public/s34471007.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787521753110",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787521753110-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "山海经：插图珍藏版",
+      "matchedUrl": "https://book.douban.com/subject/36315215/"
     },
     {
       "number": "0008",
@@ -114,10 +285,14 @@
       "author": "拱玉书 译注 / 2021",
       "workUrl": "https://book.douban.com/subject/35218215/",
       "currentCover": "https://img3.doubanio.com/view/subject/l/public/s33803872.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787100190985",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787100190985-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "吉尔伽美什史诗",
+      "matchedUrl": "https://book.douban.com/subject/35218215/"
     },
     {
       "number": "0009",
@@ -128,10 +303,14 @@
       "author": "[印]毗耶娑 / 2005",
       "workUrl": "https://book.douban.com/subject/1736919/",
       "currentCover": "https://img9.doubanio.com/view/subject/l/public/s4403326.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787500452461",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787500452461-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "摩诃婆罗多",
+      "matchedUrl": "https://book.douban.com/subject/1736919/"
     },
     {
       "number": "0010",
@@ -142,10 +321,14 @@
       "author": "[古希腊] 荷马 / 2015",
       "workUrl": "https://book.douban.com/subject/25897683/",
       "currentCover": "https://img1.doubanio.com/view/subject/l/public/s29827449.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787020104420",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787020104420-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "荷马史诗·伊利亚特",
+      "matchedUrl": "https://book.douban.com/subject/25897683/"
     },
     {
       "number": "0011",
@@ -156,10 +339,14 @@
       "author": "[古希腊] 荷马 / 2015",
       "workUrl": "https://book.douban.com/subject/25837854/",
       "currentCover": "https://img1.doubanio.com/view/subject/l/public/s29827450.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787020102792",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787020102792-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "荷马史诗·奥德赛",
+      "matchedUrl": "https://book.douban.com/subject/25837854/"
     },
     {
       "number": "0012",
@@ -186,10 +373,14 @@
       "author": "[古希腊]荷马 / 2019",
       "workUrl": "https://book.douban.com/subject/30388054/",
       "currentCover": "https://img3.doubanio.com/view/subject/l/public/s29987503.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787208155459",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787208155459-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "奥德修纪",
+      "matchedUrl": "https://book.douban.com/subject/30388054/"
     },
     {
       "number": "0014",
@@ -200,10 +391,14 @@
       "author": "[古罗马]维吉尔 / 2018",
       "workUrl": "https://book.douban.com/subject/30255678/",
       "currentCover": "https://img9.doubanio.com/view/subject/l/public/s32313694.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787544774284",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787544774284-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "埃涅阿斯纪",
+      "matchedUrl": "https://book.douban.com/subject/30255678/"
     },
     {
       "number": "0015",
@@ -214,10 +409,14 @@
       "author": "[德]格林兄弟 / 1994",
       "workUrl": "https://book.douban.com/subject/1043008/",
       "currentCover": "https://img2.doubanio.com/view/subject/l/public/s1134341.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787020019526",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787020019526-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "格林童话全集",
+      "matchedUrl": "https://book.douban.com/subject/1043008/"
     },
     {
       "number": "0016",
@@ -228,10 +427,14 @@
       "author": "[阿拉伯]佚名 / 2021",
       "workUrl": "https://book.douban.com/subject/33589154/",
       "currentCover": "https://img9.doubanio.com/view/subject/l/public/s33914144.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787540253868",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787540253868-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "一千零一夜 布拉克本全译本",
+      "matchedUrl": "https://book.douban.com/subject/33589154/"
     },
     {
       "number": "0017",
@@ -258,10 +461,14 @@
       "author": "2000年3月",
       "workUrl": "https://book.douban.com/subject/3549894/",
       "currentCover": "https://img3.doubanio.com/view/subject/l/public/s4525543.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787532067480",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787532067480-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "鹅妈妈童谣",
+      "matchedUrl": "https://book.douban.com/subject/3549894/"
     },
     {
       "number": "0019",
@@ -288,10 +495,14 @@
       "author": "[丹] H. C. 安徒生 / 2021",
       "workUrl": "https://book.douban.com/subject/35520785/",
       "currentCover": "https://img9.doubanio.com/view/subject/l/public/s33963066.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787533964641",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787533964641-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "安徒生童话全集",
+      "matchedUrl": "https://book.douban.com/subject/35520785/"
     },
     {
       "number": "0021",
@@ -302,10 +513,14 @@
       "author": "[意] 卡洛·科洛迪 / 1998",
       "workUrl": "https://book.douban.com/subject/1040632/",
       "currentCover": "https://img9.doubanio.com/view/subject/l/public/s4055854.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787020025435",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787020025435-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "木偶奇遇记",
+      "matchedUrl": "https://book.douban.com/subject/1040632/"
     },
     {
       "number": "0022",
@@ -316,10 +531,14 @@
       "author": "[英] T.H.怀特 / 2021",
       "workUrl": "https://book.douban.com/subject/35315159/",
       "currentCover": "https://img2.doubanio.com/view/subject/l/public/s33844191.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787541158377",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787541158377-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "永恒之王",
+      "matchedUrl": "https://book.douban.com/subject/35315159/"
     },
     {
       "number": "0023",
@@ -330,10 +549,14 @@
       "author": "干宝 / 2022",
       "workUrl": "https://book.douban.com/subject/10488587/",
       "currentCover": "https://img9.doubanio.com/view/subject/l/public/s22696354.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787101083125",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787101083125-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "搜神记",
+      "matchedUrl": "https://book.douban.com/subject/10488587/"
     },
     {
       "number": "0024",
@@ -374,10 +597,14 @@
       "author": "(唐) 裴铏等著 / 2022",
       "workUrl": "https://book.douban.com/subject/35909058/",
       "currentCover": "https://img3.doubanio.com/view/subject/l/public/s34225602.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787514398991",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787514398991-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "唐传奇",
+      "matchedUrl": "https://book.douban.com/subject/35909058/"
     },
     {
       "number": "0027",
@@ -388,10 +615,14 @@
       "author": "鲁迅 校录 / 2019",
       "workUrl": "https://book.douban.com/subject/30404477/",
       "currentCover": "https://img9.doubanio.com/view/subject/l/public/s33503534.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787532590612",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787532590612-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "唐宋传奇集全译",
+      "matchedUrl": "https://book.douban.com/subject/30404477/"
     },
     {
       "number": "0028",
@@ -402,10 +633,14 @@
       "author": "李汝珍 / 2004",
       "workUrl": "https://book.douban.com/subject/1144385/",
       "currentCover": "https://img9.doubanio.com/view/subject/l/public/s1729794.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787530204757",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787530204757-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "镜花缘",
+      "matchedUrl": "https://book.douban.com/subject/1144385/"
     },
     {
       "number": "0029",
@@ -416,10 +651,14 @@
       "author": "(希腊)伊索 / 2007",
       "workUrl": "https://book.douban.com/subject/2161691/",
       "currentCover": "https://img1.doubanio.com/view/subject/l/public/s23007179.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787532742530",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787532742530-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "伊索寓言",
+      "matchedUrl": "https://book.douban.com/subject/2161691/"
     },
     {
       "number": "0030",
@@ -430,10 +669,14 @@
       "author": "(德)莱辛等 / 1997",
       "workUrl": "https://book.douban.com/subject/2080064/",
       "currentCover": "https://img9.doubanio.com/view/subject/l/public/s3669605.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787532719051",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787532719051-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "世界寓言故事精选",
+      "matchedUrl": "https://book.douban.com/subject/2080064/"
     },
     {
       "number": "0031",
@@ -444,10 +687,14 @@
       "author": "克雷洛夫 / 2007",
       "workUrl": "https://book.douban.com/subject/2060483/",
       "currentCover": "https://img3.doubanio.com/view/subject/l/public/s2505237.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787532741847",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787532741847-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "克雷洛夫寓言",
+      "matchedUrl": "https://book.douban.com/subject/2060483/"
     },
     {
       "number": "0032",
@@ -472,10 +719,14 @@
       "author": "[法国] 拉·封丹 / 2022",
       "workUrl": "https://book.douban.com/subject/35653396/",
       "currentCover": "https://img9.doubanio.com/view/subject/l/public/s34034895.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787308214667",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787308214667-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "拉封丹寓言",
+      "matchedUrl": "https://book.douban.com/subject/35653396/"
     },
     {
       "number": "0034",
@@ -486,10 +737,14 @@
       "author": "张友鸾 / 2015",
       "workUrl": "https://book.douban.com/subject/26392179/",
       "currentCover": "https://img9.doubanio.com/view/subject/l/public/s28074695.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787100111713",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787100111713-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "中国古代寓言选",
+      "matchedUrl": "https://book.douban.com/subject/26392179/"
     },
     {
       "number": "0035",
@@ -500,10 +755,14 @@
       "author": "马亚中,吴小平 / 2007",
       "workUrl": "https://book.douban.com/subject/2379054/",
       "currentCover": "https://img9.doubanio.com/view/subject/l/public/s8455385.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787802285057",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787802285057-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "中国寓言",
+      "matchedUrl": "https://book.douban.com/subject/2379054/"
     },
     {
       "number": "0036",
@@ -514,10 +773,14 @@
       "author": "[美]伊万.霍斯 / 1994",
       "workUrl": "https://book.douban.com/subject/1011135/",
       "currentCover": "https://img1.doubanio.com/view/subject/l/public/s1033598.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787500102267",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787500102267-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "圣经",
+      "matchedUrl": "https://book.douban.com/subject/1011135/"
     },
     {
       "number": "0037",
@@ -528,10 +791,14 @@
       "author": "[美]D.A.卡森 / 2017",
       "workUrl": "https://book.douban.com/subject/27043838/",
       "currentCover": "https://img9.doubanio.com/view/subject/l/public/s29449835.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787560857886",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787560857886-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "新约导论",
+      "matchedUrl": "https://book.douban.com/subject/27043838/"
     },
     {
       "number": "0038",
@@ -542,10 +809,14 @@
       "author": "（美）亨德里克・房龙 / 2003",
       "workUrl": "https://book.douban.com/subject/1019308/",
       "currentCover": "https://img1.doubanio.com/view/subject/l/public/s2672308.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787561323366",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787561323366-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "圣经的故事",
+      "matchedUrl": "https://book.douban.com/subject/1019308/"
     },
     {
       "number": "0039",
@@ -556,10 +827,14 @@
       "author": "苏珊・乐芙 / 2004",
       "workUrl": "https://book.douban.com/subject/1182885/",
       "currentCover": "https://img9.doubanio.com/view/subject/l/public/s1301576.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787535740205",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787535740205-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "乳房圣经",
+      "matchedUrl": "https://book.douban.com/subject/1182885/"
     },
     {
       "number": "0040",
@@ -570,10 +845,14 @@
       "author": "穆罕莫德 / 2003",
       "workUrl": "https://book.douban.com/subject/1400697/",
       "currentCover": "https://img9.doubanio.com/view/subject/l/public/s28092454.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787500406778",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787500406778-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "古兰经",
+      "matchedUrl": "https://book.douban.com/subject/1400697/"
     },
     {
       "number": "0041",
@@ -584,10 +863,14 @@
       "author": "1988",
       "workUrl": "https://book.douban.com/subject/1194652/",
       "currentCover": "https://img3.doubanio.com/view/subject/l/public/s9925872.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787810010382",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787810010382-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "古兰经韵译",
+      "matchedUrl": "https://book.douban.com/subject/1194652/"
     },
     {
       "number": "0042",
@@ -598,10 +881,14 @@
       "author": "[叙利亚] 艾哈迈德.雅西尔.法鲁克 / 2004",
       "workUrl": "https://book.douban.com/subject/1083181/",
       "currentCover": "https://img1.doubanio.com/view/subject/l/public/s1819659.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787227026952",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787227026952-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "古兰经故事",
+      "matchedUrl": "https://book.douban.com/subject/1083181/"
     },
     {
       "number": "0043",
@@ -612,10 +899,14 @@
       "author": "[日] 菊地晓 / 2025",
       "workUrl": "https://book.douban.com/subject/37384332/",
       "currentCover": "https://img1.doubanio.com/view/subject/l/public/s35190290.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787507772159",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787507772159-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "民俗学入门",
+      "matchedUrl": "https://book.douban.com/subject/37384332/"
     },
     {
       "number": "0044",
@@ -626,10 +917,14 @@
       "author": "岳永逸 / 2023",
       "workUrl": "https://book.douban.com/subject/36342412/",
       "currentCover": "https://img3.doubanio.com/view/subject/l/public/s34522412.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787303272792",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787303272792-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "终始",
+      "matchedUrl": "https://book.douban.com/subject/36342412/"
     },
     {
       "number": "0045",
@@ -640,10 +935,14 @@
       "author": "张紫晨 / 1993",
       "workUrl": "https://book.douban.com/subject/4303670/",
       "currentCover": "https://img3.doubanio.com/view/subject/l/public/s4188333.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787805286440",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787805286440-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "中国民俗学史",
+      "matchedUrl": "https://book.douban.com/subject/4303670/"
     },
     {
       "number": "0046",
@@ -654,10 +953,14 @@
       "author": "陈勤建 / 2007",
       "workUrl": "https://book.douban.com/subject/2274188/",
       "currentCover": "https://img1.doubanio.com/view/subject/l/public/s6133338.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787561755174",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787561755174-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "中国民俗学",
+      "matchedUrl": "https://book.douban.com/subject/2274188/"
     },
     {
       "number": "0047",
@@ -668,10 +971,14 @@
       "author": "费孝通 / 2006",
       "workUrl": "https://book.douban.com/subject/1795079/",
       "currentCover": "https://img1.doubanio.com/view/subject/l/public/s1762210.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787208062153",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787208062153-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "乡土中国",
+      "matchedUrl": "https://book.douban.com/subject/1795079/"
     },
     {
       "number": "0048",
@@ -682,10 +989,14 @@
       "author": "[德]赫尔曼•鲍辛格 / 2014",
       "workUrl": "https://book.douban.com/subject/25881177/",
       "currentCover": "https://img3.doubanio.com/view/subject/l/public/s27300112.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787549552900",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787549552900-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "技术世界中的民间文化",
+      "matchedUrl": "https://book.douban.com/subject/25881177/"
     },
     {
       "number": "0049",
@@ -696,10 +1007,14 @@
       "author": "[俄]巴赫金 / 1998",
       "workUrl": "https://book.douban.com/subject/1045923/",
       "currentCover": "https://img3.doubanio.com/view/subject/l/public/s33707273.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787543431270",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787543431270-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "拉伯雷研究",
+      "matchedUrl": "https://book.douban.com/subject/1045923/"
     },
     {
       "number": "0050",
@@ -710,10 +1025,14 @@
       "author": "[美] 罗伯特·麦基 / 2014",
       "workUrl": "https://book.douban.com/subject/25976544/",
       "currentCover": "https://img1.doubanio.com/view/subject/l/public/s27598249.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787201088334",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787201088334-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "故事",
+      "matchedUrl": "https://book.douban.com/subject/25976544/"
     },
     {
       "number": "0051",
@@ -724,10 +1043,14 @@
       "author": "[美] 约瑟夫·坎贝尔 / 2016",
       "workUrl": "https://book.douban.com/subject/26707803/",
       "currentCover": "https://img9.doubanio.com/view/subject/l/public/s28382455.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787213069475",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787213069475-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "千面英雄",
+      "matchedUrl": "https://book.douban.com/subject/26707803/"
     },
     {
       "number": "0052",
@@ -752,10 +1075,14 @@
       "author": "吴淼 / 2007",
       "workUrl": "https://book.douban.com/subject/2334065/",
       "currentCover": "https://img1.doubanio.com/view/subject/l/public/s4433958.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787544800280",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787544800280-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "塔希里亚故事集",
+      "matchedUrl": "https://book.douban.com/subject/2334065/"
     },
     {
       "number": "0054",
@@ -766,10 +1093,14 @@
       "author": "[英] 安吉拉·卡特 / 2011",
       "workUrl": "https://book.douban.com/subject/5993314/",
       "currentCover": "https://img1.doubanio.com/view/subject/l/public/s6870889.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787305081323",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787305081323-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "安吉拉·卡特的精怪故事集",
+      "matchedUrl": "https://book.douban.com/subject/5993314/"
     },
     {
       "number": "0055",
@@ -780,10 +1111,14 @@
       "author": "田遨 / 1993",
       "workUrl": "https://book.douban.com/subject/3058849/",
       "currentCover": "https://img1.doubanio.com/view/subject/l/public/s3056028.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787532602582",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787532602582-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "绘画文学故事词典·古代小说故事",
+      "matchedUrl": "https://book.douban.com/subject/3058849/"
     },
     {
       "number": "0056",
@@ -794,10 +1129,14 @@
       "author": "[奥地利] 斯蒂芬·茨威格 / 2019",
       "workUrl": "https://book.douban.com/subject/33385476/",
       "currentCover": "https://img1.doubanio.com/view/subject/l/public/s32299368.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787559433626",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787559433626-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "人类群星闪耀时",
+      "matchedUrl": "https://book.douban.com/subject/33385476/"
     },
     {
       "number": "0057",
@@ -808,10 +1147,14 @@
       "author": "江晓原 / 2003",
       "workUrl": "https://book.douban.com/subject/1069040/",
       "currentCover": "https://img2.doubanio.com/view/subject/l/public/s1155321.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787544309967",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787544309967-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "性感",
+      "matchedUrl": "https://book.douban.com/subject/1069040/"
     },
     {
       "number": "0058",
@@ -822,10 +1165,14 @@
       "author": "梁治平 编 / 1994",
       "workUrl": "https://book.douban.com/subject/1058310/",
       "currentCover": "https://img1.doubanio.com/view/subject/l/public/s1498939.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787108007469",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787108007469-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "法律的文化解释",
+      "matchedUrl": "https://book.douban.com/subject/1058310/"
     },
     {
       "number": "0059",
@@ -836,10 +1183,14 @@
       "author": "[美]鲁思・本尼迪克特 / 1990",
       "workUrl": "https://book.douban.com/subject/1022238/",
       "currentCover": "https://img3.doubanio.com/view/subject/l/public/s9140593.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787100012935",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787100012935-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "菊与刀",
+      "matchedUrl": "https://book.douban.com/subject/1022238/"
     },
     {
       "number": "0060",
@@ -850,10 +1201,14 @@
       "author": "[美] 露丝·本尼迪克特 / 2009",
       "workUrl": "https://book.douban.com/subject/3528068/",
       "currentCover": "https://img1.doubanio.com/view/subject/l/public/s4097539.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787509705902",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787509705902-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "文化模式",
+      "matchedUrl": "https://book.douban.com/subject/3528068/"
     },
     {
       "number": "0061",
@@ -864,10 +1219,14 @@
       "author": "[德] 诺贝特·埃利亚斯 / 2009",
       "workUrl": "https://book.douban.com/subject/3701456/",
       "currentCover": "https://img3.doubanio.com/view/subject/l/public/s3755087.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787532747214",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787532747214-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "文明的进程",
+      "matchedUrl": "https://book.douban.com/subject/3701456/"
     },
     {
       "number": "0062",
@@ -878,10 +1237,14 @@
       "author": "[英]玛丽·道格拉斯 / 2020",
       "workUrl": "https://book.douban.com/subject/35174654/",
       "currentCover": "https://img1.doubanio.com/view/subject/l/public/s33761819.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787100188821",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787100188821-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "洁净与危险",
+      "matchedUrl": "https://book.douban.com/subject/35174654/"
     },
     {
       "number": "0063",
@@ -892,10 +1255,14 @@
       "author": "[美] 克利福德·格尔茨 / 2014",
       "workUrl": "https://book.douban.com/subject/25870722/",
       "currentCover": "https://img9.doubanio.com/view/subject/l/public/s27345466.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787544742269",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787544742269-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "文化的解释",
+      "matchedUrl": "https://book.douban.com/subject/25870722/"
     },
     {
       "number": "0064",
@@ -906,10 +1273,14 @@
       "author": "[英] 马泰·坎迪亚(主编) / 2024",
       "workUrl": "https://book.douban.com/subject/36952721/",
       "currentCover": "https://img9.doubanio.com/view/subject/l/public/s34969966.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787515526454",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787515526454-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "剑桥大学人类学十五讲",
+      "matchedUrl": "https://book.douban.com/subject/36952721/"
     },
     {
       "number": "0065",
@@ -920,10 +1291,14 @@
       "author": "[法] 米歇尔·福柯 著 / 2026",
       "workUrl": "https://book.douban.com/subject/38244665/",
       "currentCover": "https://img9.doubanio.com/view/subject/l/public/s35437934.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787208201095",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787208201095-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "人类学问题",
+      "matchedUrl": "https://book.douban.com/subject/38244665/"
     },
     {
       "number": "0066",
@@ -934,10 +1309,14 @@
       "author": "德斯蒙德·莫利斯 / 2010年",
       "workUrl": "https://book.douban.com/subject/4312810/",
       "currentCover": "https://img9.doubanio.com/view/subject/l/public/s4197735.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787309070033",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787309070033-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "裸猿",
+      "matchedUrl": "https://book.douban.com/subject/4312810/"
     },
     {
       "number": "0067",
@@ -948,10 +1327,14 @@
       "author": "（美）贾雷德·戴蒙德 / 2012",
       "workUrl": "https://book.douban.com/subject/10607615/",
       "currentCover": "https://img3.doubanio.com/view/subject/l/public/s10205323.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787532757398",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787532757398-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "第三种黑猩猩",
+      "matchedUrl": "https://book.douban.com/subject/10607615/"
     },
     {
       "number": "0068",
@@ -962,10 +1345,14 @@
       "author": "[法] 克洛德·列维-斯特劳斯 / 2009",
       "workUrl": "https://book.douban.com/subject/4131380/",
       "currentCover": "https://img1.doubanio.com/view/subject/l/public/s4083008.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787300110073",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787300110073-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "忧郁的热带",
+      "matchedUrl": "https://book.douban.com/subject/4131380/"
     },
     {
       "number": "0069",
@@ -976,10 +1363,14 @@
       "author": "[美] 卡罗尔·R.恩贝尔 / 2021",
       "workUrl": "https://book.douban.com/subject/35694032/",
       "currentCover": "https://img3.doubanio.com/view/subject/l/public/s34080522.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787100200738",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787100200738-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "文化人类学（第13版）",
+      "matchedUrl": "https://book.douban.com/subject/35694032/"
     },
     {
       "number": "0070",
@@ -990,10 +1381,14 @@
       "author": "王铭铭 / 2016",
       "workUrl": "https://book.douban.com/subject/26839384/",
       "currentCover": "https://img9.doubanio.com/view/subject/l/public/s29415454.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787301272961",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787301272961-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "人类学是什么",
+      "matchedUrl": "https://book.douban.com/subject/26839384/"
     },
     {
       "number": "0071",
@@ -1004,10 +1399,14 @@
       "author": "孔丘 编订 / 2006",
       "workUrl": "https://book.douban.com/subject/1883245/",
       "currentCover": "https://img1.doubanio.com/view/subject/l/public/s2177629.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787200065039",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787200065039-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "诗经",
+      "matchedUrl": "https://book.douban.com/subject/1883245/"
     },
     {
       "number": "0072",
@@ -1050,10 +1449,14 @@
       "author": "[清] 沈德潛 选 / 2017",
       "workUrl": "https://book.douban.com/subject/27081002/",
       "currentCover": "https://img1.doubanio.com/view/subject/l/public/s29604620.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787101126532",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787101126532-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "古诗源",
+      "matchedUrl": "https://book.douban.com/subject/27081002/"
     },
     {
       "number": "0075",
@@ -1064,10 +1467,14 @@
       "author": "林家骊 注释 / 2023",
       "workUrl": "https://book.douban.com/subject/4917220/",
       "currentCover": "https://img1.doubanio.com/view/subject/l/public/s4442188.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787101072730",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787101072730-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "楚辞",
+      "matchedUrl": "https://book.douban.com/subject/4917220/"
     },
     {
       "number": "0076",
@@ -1094,10 +1501,14 @@
       "author": "杨伯峻 / 2018",
       "workUrl": "https://book.douban.com/subject/30466012/",
       "currentCover": "https://img2.doubanio.com/view/subject/l/public/s34287371.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787101135763",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787101135763-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "论语译注",
+      "matchedUrl": "https://book.douban.com/subject/30466012/"
     },
     {
       "number": "0078",
@@ -1108,10 +1519,14 @@
       "author": "（法）路易·阿尔都塞 / 2025",
       "workUrl": "https://book.douban.com/subject/37415782/",
       "currentCover": "https://img9.doubanio.com/view/subject/l/public/s35192336.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787560456997",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787560456997-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "写给非哲学家的哲学入门",
+      "matchedUrl": "https://book.douban.com/subject/37415782/"
     },
     {
       "number": "0079",
@@ -1122,10 +1537,14 @@
       "author": "[英国] 布莱恩·麦基 / 2022",
       "workUrl": "https://book.douban.com/subject/36091075/",
       "currentCover": "https://img9.doubanio.com/view/subject/l/public/s34307614.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787108073662",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787108073662-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "哲学如何塑造了我",
+      "matchedUrl": "https://book.douban.com/subject/36091075/"
     },
     {
       "number": "0080",
@@ -1136,10 +1555,14 @@
       "author": "(美) 撒穆尔·伊诺克·斯通普夫 / 2019",
       "workUrl": "https://book.douban.com/subject/34447865/",
       "currentCover": "https://img1.doubanio.com/view/subject/l/public/s33438650.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787559632432",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787559632432-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "西方哲学史（第9版）",
+      "matchedUrl": "https://book.douban.com/subject/34447865/"
     },
     {
       "number": "0081",
@@ -1150,10 +1573,14 @@
       "author": "[美] 威尔·杜兰特 / 2013",
       "workUrl": "https://book.douban.com/subject/14439405/",
       "currentCover": "https://img9.doubanio.com/view/subject/l/public/s24589846.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787513306331",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787513306331-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "哲学的故事",
+      "matchedUrl": "https://book.douban.com/subject/14439405/"
     },
     {
       "number": "0082",
@@ -1164,10 +1591,14 @@
       "author": "[挪威] 乔斯坦·贾德 / 2017",
       "workUrl": "https://book.douban.com/subject/27172839/",
       "currentCover": "https://img9.doubanio.com/view/subject/l/public/s29580784.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787506394864",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787506394864-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "苏菲的世界",
+      "matchedUrl": "https://book.douban.com/subject/27172839/"
     },
     {
       "number": "0083",
@@ -1178,10 +1609,14 @@
       "author": "冯友兰 / 2013",
       "workUrl": "https://book.douban.com/subject/20501147/",
       "currentCover": "https://img1.doubanio.com/view/subject/l/public/s24586939.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787301215692",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787301215692-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "中国哲学简史",
+      "matchedUrl": "https://book.douban.com/subject/20501147/"
     },
     {
       "number": "0084",
@@ -1192,10 +1627,14 @@
       "author": "张志伟 / 2004",
       "workUrl": "https://book.douban.com/subject/1074030/",
       "currentCover": "https://img3.doubanio.com/view/subject/l/public/s1315113.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787301068687",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787301068687-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "西方哲学十五讲",
+      "matchedUrl": "https://book.douban.com/subject/1074030/"
     },
     {
       "number": "0085",
@@ -1206,10 +1645,14 @@
       "author": "[英] 彼得·沃森 / 2018",
       "workUrl": "https://book.douban.com/subject/27136549/",
       "currentCover": "https://img9.doubanio.com/view/subject/l/public/s34028004.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787544770637",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787544770637-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "思想史",
+      "matchedUrl": "https://book.douban.com/subject/27136549/"
     },
     {
       "number": "0086",
@@ -1220,10 +1663,14 @@
       "author": "[英] 彼得·沃森 / 2019",
       "workUrl": "https://book.douban.com/subject/34449288/",
       "currentCover": "https://img9.doubanio.com/view/subject/l/public/s34028006.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787544779012",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787544779012-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "20世纪思想史",
+      "matchedUrl": "https://book.douban.com/subject/34449288/"
     },
     {
       "number": "0087",
@@ -1234,10 +1681,14 @@
       "author": "罗兰・斯特龙伯格 / 2005",
       "workUrl": "https://book.douban.com/subject/1024785/",
       "currentCover": "https://img3.doubanio.com/view/subject/l/public/s3209762.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787802110052",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787802110052-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "西方现代思想史",
+      "matchedUrl": "https://book.douban.com/subject/1024785/"
     },
     {
       "number": "0088",
@@ -1248,10 +1699,14 @@
       "author": "沃森 / 2011",
       "workUrl": "https://book.douban.com/subject/10428786/",
       "currentCover": "https://img1.doubanio.com/view/subject/l/public/s8865228.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787511709196",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787511709196-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "人类思想史",
+      "matchedUrl": "https://book.douban.com/subject/10428786/"
     },
     {
       "number": "0089",
@@ -1262,10 +1717,14 @@
       "author": "[古希腊] 柏拉图 / 1986",
       "workUrl": "https://book.douban.com/subject/1004821/",
       "currentCover": "https://img1.doubanio.com/view/subject/l/public/s34157889.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787100017565",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787100017565-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "理想国",
+      "matchedUrl": "https://book.douban.com/subject/1004821/"
     },
     {
       "number": "0090",
@@ -1276,10 +1735,14 @@
       "author": "[古希腊] 柏拉图 / 2013",
       "workUrl": "https://book.douban.com/subject/21570668/",
       "currentCover": "https://img3.doubanio.com/view/subject/l/public/s25807032.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787100094016",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787100094016-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "会饮篇",
+      "matchedUrl": "https://book.douban.com/subject/21570668/"
     },
     {
       "number": "0091",
@@ -1290,10 +1753,14 @@
       "author": "葛兆光 / 2013",
       "workUrl": "https://book.douban.com/subject/24869831/",
       "currentCover": "https://img1.doubanio.com/view/subject/l/public/s27995308.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787309090246",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787309090246-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "中国思想史（三卷本）",
+      "matchedUrl": "https://book.douban.com/subject/24869831/"
     },
     {
       "number": "0092",
@@ -1304,10 +1771,14 @@
       "author": "斯宾诺莎 / 1998",
       "workUrl": "https://book.douban.com/subject/1274953/",
       "currentCover": "https://img3.doubanio.com/view/subject/l/public/s1524917.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787100011631",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787100011631-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "伦理学",
+      "matchedUrl": "https://book.douban.com/subject/1274953/"
     },
     {
       "number": "0093",
@@ -1318,10 +1789,14 @@
       "author": "[德]弗里德里希·包尔生 / 2021",
       "workUrl": "https://book.douban.com/subject/35063703/",
       "currentCover": "https://img2.doubanio.com/view/subject/l/public/s33916681.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787100183741",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787100183741-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "伦理学体系",
+      "matchedUrl": "https://book.douban.com/subject/35063703/"
     },
     {
       "number": "0094",
@@ -1332,10 +1807,14 @@
       "author": "[古希腊] 亚里士多德 / 2024",
       "workUrl": "https://book.douban.com/subject/36840462/",
       "currentCover": "https://img9.doubanio.com/view/subject/l/public/s34992784.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787542684585",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787542684585-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "尼各马可伦理学",
+      "matchedUrl": "https://book.douban.com/subject/36840462/"
     },
     {
       "number": "0095",
@@ -1346,10 +1825,14 @@
       "author": "[德]康德（Immanuel Kant） / 2016",
       "workUrl": "https://book.douban.com/subject/26892917/",
       "currentCover": "https://img9.doubanio.com/view/subject/l/public/s29165014.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787010166834",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787010166834-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "实践理性批判",
+      "matchedUrl": "https://book.douban.com/subject/26892917/"
     },
     {
       "number": "0096",
@@ -1360,10 +1843,14 @@
       "author": "[德] 伊曼努尔·康德 / 2013",
       "workUrl": "https://book.douban.com/subject/25716162/",
       "currentCover": "https://img2.doubanio.com/view/subject/l/public/s28305971.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787010123561",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787010123561-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "道德形而上学奠基",
+      "matchedUrl": "https://book.douban.com/subject/25716162/"
     },
     {
       "number": "0097",
@@ -1374,10 +1861,14 @@
       "author": "(英)亚当·斯密 / 1997",
       "workUrl": "https://book.douban.com/subject/1116367/",
       "currentCover": "https://img3.doubanio.com/view/subject/l/public/s2177657.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787100028264",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787100028264-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "道德情操论",
+      "matchedUrl": "https://book.douban.com/subject/1116367/"
     },
     {
       "number": "0098",
@@ -1388,10 +1879,14 @@
       "author": "[美]约翰·罗尔斯 著 / 2009",
       "workUrl": "https://book.douban.com/subject/4000736/",
       "currentCover": "https://img1.doubanio.com/view/subject/l/public/s4195108.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787500479543",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787500479543-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "正义论",
+      "matchedUrl": "https://book.douban.com/subject/4000736/"
     },
     {
       "number": "0099",
@@ -1402,10 +1897,14 @@
       "author": "[古希腊] 亚里士多德 / 1997",
       "workUrl": "https://book.douban.com/subject/1077833/",
       "currentCover": "https://img2.doubanio.com/view/subject/l/public/s6503751.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787100011365",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787100011365-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "形而上学",
+      "matchedUrl": "https://book.douban.com/subject/1077833/"
     },
     {
       "number": "0100",
@@ -1416,10 +1915,14 @@
       "author": "柏端 達也 / 2017",
       "workUrl": "https://book.douban.com/subject/35222022/",
       "currentCover": "https://img1.doubanio.com/view/subject/l/public/s33735560.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9784326154494",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9784326154494-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "現代形而上学入門",
+      "matchedUrl": "https://book.douban.com/subject/35222022/"
     },
     {
       "number": "0101",
@@ -1430,10 +1933,14 @@
       "author": "张汝伦 / 2014",
       "workUrl": "https://book.douban.com/subject/25865394/",
       "currentCover": "https://img3.doubanio.com/view/subject/l/public/s27468873.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787208122109",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787208122109-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "《存在与时间》释义",
+      "matchedUrl": "https://book.douban.com/subject/25865394/"
     },
     {
       "number": "0102",
@@ -1444,10 +1951,14 @@
       "author": "阿莉莎·奈伊 / 2024",
       "workUrl": "https://book.douban.com/subject/36889683/",
       "currentCover": "https://img3.doubanio.com/view/subject/l/public/s34899267.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787300328171",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787300328171-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "形而上学导论",
+      "matchedUrl": "https://book.douban.com/subject/36889683/"
     },
     {
       "number": "0103",
@@ -1458,10 +1969,14 @@
       "author": "黑格尔 / 1979",
       "workUrl": "https://book.douban.com/subject/1012380/",
       "currentCover": "https://img1.doubanio.com/view/subject/l/public/s6996729.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787100005661",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787100005661-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "精神现象学（上卷）",
+      "matchedUrl": "https://book.douban.com/subject/1012380/"
     },
     {
       "number": "0104",
@@ -1472,10 +1987,14 @@
       "author": "[德] 马丁·海德格尔 / 2014",
       "workUrl": "https://book.douban.com/subject/25939476/",
       "currentCover": "https://img9.doubanio.com/view/subject/l/public/s27988236.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787108050960",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787108050960-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "存在与时间",
+      "matchedUrl": "https://book.douban.com/subject/25939476/"
     },
     {
       "number": "0105",
@@ -1486,10 +2005,14 @@
       "author": "[德] 马丁·海德格尔 原著 / 2019",
       "workUrl": "https://book.douban.com/subject/30426274/",
       "currentCover": "https://img9.doubanio.com/view/subject/l/public/s33468236.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787559814487",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787559814487-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "《存在与时间》读本",
+      "matchedUrl": "https://book.douban.com/subject/30426274/"
     },
     {
       "number": "0106",
@@ -1500,10 +2023,14 @@
       "author": "[德] 埃德蒙德·胡塞尔 / 2016",
       "workUrl": "https://book.douban.com/subject/26840521/",
       "currentCover": "https://img9.doubanio.com/view/subject/l/public/s29110025.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787100124096",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787100124096-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "逻辑学与认识论导论",
+      "matchedUrl": "https://book.douban.com/subject/26840521/"
     },
     {
       "number": "0107",
@@ -1514,10 +2041,14 @@
       "author": "张东荪 / 2011",
       "workUrl": "https://book.douban.com/subject/10416542/",
       "currentCover": "https://img9.doubanio.com/view/subject/l/public/s7658144.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787100084741",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787100084741-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "认识论",
+      "matchedUrl": "https://book.douban.com/subject/10416542/"
     },
     {
       "number": "0108",
@@ -1528,10 +2059,14 @@
       "author": "[英]洛克 / 1959",
       "workUrl": "https://book.douban.com/subject/1116325/",
       "currentCover": "https://img3.doubanio.com/view/subject/l/public/s2306652.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787100011372",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787100011372-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "人类理解论（上下）",
+      "matchedUrl": "https://book.douban.com/subject/1116325/"
     },
     {
       "number": "0109",
@@ -1542,10 +2077,14 @@
       "author": "[英] 路德维希·维特根斯坦 / 2005",
       "workUrl": "https://book.douban.com/subject/1315184/",
       "currentCover": "https://img2.doubanio.com/view/subject/l/public/s1322641.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787208054707",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787208054707-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "哲学研究",
+      "matchedUrl": "https://book.douban.com/subject/1315184/"
     },
     {
       "number": "0110",
@@ -1556,10 +2095,14 @@
       "author": "[德] 康德 / 2017",
       "workUrl": "https://book.douban.com/subject/27009630/",
       "currentCover": "https://img9.doubanio.com/view/subject/l/public/s29420655.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787010167350",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787010167350-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "纯粹理性批判",
+      "matchedUrl": "https://book.douban.com/subject/27009630/"
     },
     {
       "number": "0111",
@@ -1570,10 +2113,14 @@
       "author": "何涛 / 2024",
       "workUrl": "https://book.douban.com/subject/37135582/",
       "currentCover": "https://img9.doubanio.com/view/subject/l/public/s35049625.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787559841513",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787559841513-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "西方认识论史",
+      "matchedUrl": "https://book.douban.com/subject/37135582/"
     },
     {
       "number": "0112",
@@ -1584,10 +2131,14 @@
       "author": "[德] 康德 / 2025",
       "workUrl": "https://book.douban.com/subject/37445814/",
       "currentCover": "https://img1.doubanio.com/view/subject/l/public/s35274828.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787100254434",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787100254434-L.jpg"
+      ],
+      "status": "known",
+      "matchedTitle": "判断力批判",
+      "matchedUrl": "https://book.douban.com/subject/37445814/"
     },
     {
       "number": "0113",

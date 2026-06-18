@@ -220,7 +220,14 @@ async function applyChineseIsbns(sourceBooks) {
     const byNumber = new Map((data.books || []).map((book) => [String(book.number), book]));
     return sourceBooks.map((book) => {
       const isbnRecord = byNumber.get(String(book.number).padStart(4, "0"));
-      return isbnRecord?.isbn ? { ...book, isbn: isbnRecord.isbn } : book;
+      if (!isbnRecord) return book;
+      const coverCandidates = Array.from(new Set([isbnRecord.cachedCover, ...(isbnRecord.coverCandidates || [])].filter(Boolean)));
+      return {
+        ...book,
+        isbn: isbnRecord.isbn || book.isbn || "",
+        cover: isbnRecord.cachedCover || book.cover,
+        coverCandidates,
+      };
     });
   } catch {
     return sourceBooks;
@@ -382,6 +389,7 @@ function isbnFromUrl(url) {
 function coverFallbacks(book) {
   const isbn = book.isbn || isbnFromUrl(book.workUrl) || isbnFromUrl(book.cover);
   return [
+    ...(book.coverCandidates || []),
     isbn ? `https://covers.openlibrary.org/b/isbn/${isbn}-L.jpg` : "",
     proxiedCoverUrl(book.cover),
   ].filter((url, index, all) => url && all.indexOf(url) === index && url !== book.cover);

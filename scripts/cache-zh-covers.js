@@ -84,7 +84,7 @@ function download(url, redirects = 0) {
       req.destroy();
       resolve({ ok: false, status: 0, error: "timeout" });
     });
-    req.on("error", (error) => resolve({ ok: false, status: 0, error: error.message }));
+    req.on("error", (error) => resolve({ ok: false, status: 0, error: error.message || error.code || error.name || "request error" }));
   });
 }
 
@@ -95,15 +95,17 @@ function proxyUrl(url) {
 
 async function downloadWithRetries(url) {
   let last;
+  const errors = [];
   const candidates = [url, proxyUrl(url)].filter(Boolean);
   for (const candidate of candidates) {
     for (let attempt = 1; attempt <= ATTEMPTS; attempt += 1) {
       last = await download(candidate);
       if (last.ok) return { ...last, sourceUrl: candidate };
+      errors.push(`${candidate}: ${last.error || (last.status === 0 ? "network error" : last.status) || "unknown error"}`);
       if (attempt < ATTEMPTS) await new Promise((resolve) => setTimeout(resolve, 750 * attempt));
     }
   }
-  return last;
+  return { ...last, error: errors.join("; ") || last?.error || "unknown error" };
 }
 
 async function main() {
@@ -132,7 +134,7 @@ async function main() {
 
     const result = await downloadWithRetries(current);
     if (!result.ok) {
-      failed.push({ number, title: row[3], cover: current, error: result.error || result.status });
+      failed.push({ number, title: row[3], cover: current, error: result.error || (result.status === 0 ? "network error" : result.status) });
       continue;
     }
     const ext = extensionFrom(current, result.type);
@@ -143,7 +145,7 @@ async function main() {
     if (cached % 50 === 0) console.log(`cached ${cached}`);
   }
 
-  writeRows(rows);
+  if (cached > 0) writeRows(rows);
   const summary = {
     generatedAt: new Date().toISOString(),
     rows: rows.length,

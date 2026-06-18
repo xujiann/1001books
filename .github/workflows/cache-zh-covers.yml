@@ -32,7 +32,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Build ISBN candidates
-        run: node scripts/build-zh-isbn-data.js --online --query-limit=80
+        run: node scripts/build-zh-isbn-data.js --online --douban-only --query-limit=80
 
       - name: Cache covers by ISBN
         run: node scripts/cache-zh-covers-by-isbn.js --limit=80

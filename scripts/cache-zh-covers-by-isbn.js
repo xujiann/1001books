@@ -85,10 +85,11 @@ async function main() {
     }
     const candidates = Array.from(new Set(book.coverCandidates || [])).filter(Boolean);
     if (!candidates.length) continue;
+    const errors = [];
     for (const url of candidates) {
       const result = await download(url);
       if (!result.ok) {
-        failed.push({ number: book.number, title: book.title, url, error: result.error });
+        errors.push(`${url}: ${result.error || "unknown error"}`);
         continue;
       }
       const relative = `covers/zh/${book.number}${extension(url, result.type)}`;
@@ -100,6 +101,9 @@ async function main() {
       }
       cached += 1;
       break;
+    }
+    if (!book.cachedCover && errors.length) {
+      failed.push({ number: book.number, title: book.title, error: errors.join("; ") });
     }
   }
 

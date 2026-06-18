@@ -8,9 +8,13 @@ const LIMIT_ARG = process.argv.find((arg) => arg.startsWith("--limit="));
 const LIMIT = LIMIT_ARG ? Number(LIMIT_ARG.split("=")[1]) : Infinity;
 const QUERY_LIMIT_ARG = process.argv.find((arg) => arg.startsWith("--query-limit="));
 const QUERY_LIMIT = QUERY_LIMIT_ARG ? Number(QUERY_LIMIT_ARG.split("=")[1]) : Infinity;
+const START_ARG = process.argv.find((arg) => arg.startsWith("--start-number="));
+const START_NUMBER = START_ARG ? Number(START_ARG.split("=")[1]) : 1;
 const ONLINE = process.argv.includes("--online");
 const FORCE = process.argv.includes("--force");
+const DOUBAN_ONLY = process.argv.includes("--douban-only");
 const GOOGLE_BOOKS_API_KEY = process.env.GOOGLE_BOOKS_API_KEY || "";
+const REQUEST_TIMEOUT_MS = 10000;
 
 function readRows() {
   const source = fs.readFileSync(path.join(ROOT, "zh-books.js"), "utf8");
@@ -49,21 +53,29 @@ function googleBooksCover(volume) {
 }
 
 async function fetchJson(url) {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
   const response = await fetch(url, {
     headers: { "User-Agent": "1001books-isbn-builder" },
+    signal: controller.signal,
   });
+  clearTimeout(timeout);
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
   return response.json();
 }
 
 async function fetchText(url) {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
   const response = await fetch(url, {
     headers: {
       "User-Agent": "Mozilla/5.0",
       Referer: "https://book.douban.com/",
       Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
     },
+    signal: controller.signal,
   });
+  clearTimeout(timeout);
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
   return response.text();
 }
@@ -84,7 +96,10 @@ async function queryDouban(book) {
     html.match(/ISBN:\s*([0-9Xx-]{10,17})/) ||
     html.match(/<span[^>]*>\s*ISBN:\s*<\/span>\s*([0-9Xx-]{10,17})/i);
   const isbn = normalizeIsbn(match?.[1] || "");
-  if (!isbn) return null;
+  if (!isbn) {
+    const title = html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1]?.replace(/\s+/g, " ").trim() || "";
+    throw new Error(`ISBN not found${title ? ` (${title.slice(0, 80)})` : ""}`);
+  }
   return {
     isbn,
     source: "douban-subject",
@@ -140,10 +155,27 @@ async function queryGoogleBooks(book) {
 
 async function enrich(book) {
   if (!ONLINE) return null;
+  const attempts = [];
   try {
-    return (await queryDouban(book)) || (await queryOpenLibrary(book)) || (await queryGoogleBooks(book));
+    const providers = DOUBAN_ONLY
+      ? [["douban-subject", queryDouban]]
+      : [
+          ["douban-subject", queryDouban],
+          ["openlibrary-search", queryOpenLibrary],
+          ["google-books", queryGoogleBooks],
+        ];
+    for (const [source, query] of providers) {
+      try {
+        const result = await query(book);
+        attempts.push({ source, ok: Boolean(result?.isbn), error: "" });
+        if (result?.isbn) return { ...result, attempts };
+      } catch (error) {
+        attempts.push({ source, ok: false, error: error.message });
+      }
+    }
+    return { attempts };
   } catch (error) {
-    return { error: error.message };
+    return { error: error.message, attempts };
   }
 }
 
@@ -154,6 +186,54 @@ async function main() {
   const existingByNumber = new Map((existing.books || []).map((book) => [String(book.number), book]));
   const result = [];
   let queryCount = 0;
+  const queryReport = {
+    attempted: 0,
+    found: 0,
+    sources: {},
+    errors: [],
+  };
+
+  function summaryFor(books) {
+    return {
+      generatedAt: new Date().toISOString(),
+      rows: books.length,
+      known: books.filter((item) => item.status === "known").length,
+      candidates: books.filter((item) => item.status === "candidate").length,
+      missing: books.filter((item) => item.status === "missing").length,
+      noIsbn: books.filter((item) => item.status === "no-isbn").length,
+      query: queryReport,
+    };
+  }
+
+  function saveCheckpoint() {
+    const books = result.slice();
+    for (let index = books.length; index < rows.length; index += 1) {
+      const number = String(index + 1).padStart(4, "0");
+      const previous = existingByNumber.get(number);
+      if (previous) {
+        books.push(previous);
+        continue;
+      }
+      const row = rows[index];
+      const title = row[3];
+      const author = row[4];
+      const workUrl = row[5];
+      const cover = row[6];
+      const directIsbn = isbnFromText(workUrl) || isbnFromText(cover);
+      books.push({
+        ...location(row, index),
+        title,
+        author,
+        workUrl,
+        currentCover: cover,
+        isbn: directIsbn,
+        isbnSource: directIsbn ? "existing-url" : "",
+        coverCandidates: directIsbn ? [openLibraryCover(directIsbn)] : [],
+        status: directIsbn ? "known" : "missing",
+      });
+    }
+    fs.writeFileSync(OUTPUT, `${JSON.stringify({ summary: summaryFor(books), books }, null, 2)}\n`);
+  }
 
   for (let index = 0; index < rows.length && index < LIMIT; index += 1) {
     const row = rows[index];
@@ -181,10 +261,17 @@ async function main() {
       if (previous?.matchedTitle) record.matchedTitle = previous.matchedTitle;
       if (previous?.matchedUrl) record.matchedUrl = previous.matchedUrl;
     }
+    if (!record.isbn && !FORCE && previous?.status === "no-isbn") {
+      record.status = "no-isbn";
+      record.error = previous.error || "ISBN not found";
+    }
 
-    if (!record.isbn && queryCount < QUERY_LIMIT) {
+    let queriedThisRecord = false;
+    if (ONLINE && !record.isbn && record.status !== "no-isbn" && index + 1 >= START_NUMBER && queryCount < QUERY_LIMIT) {
+      queriedThisRecord = true;
       queryCount += 1;
-      const enriched = await enrich({ title, author });
+      queryReport.attempted += 1;
+      const enriched = await enrich({ title, author, workUrl });
       if (enriched?.isbn) {
         record.isbn = enriched.isbn;
         record.isbnSource = enriched.source;
@@ -192,20 +279,32 @@ async function main() {
         record.matchedTitle = enriched.matchedTitle;
         record.matchedUrl = enriched.workUrl;
         record.status = "candidate";
+        queryReport.found += 1;
       } else if (enriched?.error) {
         record.error = enriched.error;
       }
+      const doubanNotFound = (enriched?.attempts || []).some((attempt) => attempt.source === "douban-subject" && /ISBN not found/.test(attempt.error || ""));
+      if (!record.isbn && doubanNotFound && DOUBAN_ONLY) {
+        record.status = "no-isbn";
+        record.error = "ISBN not found on Douban subject page";
+      }
+      for (const attempt of enriched?.attempts || []) {
+        const source = (queryReport.sources[attempt.source] ||= { attempted: 0, found: 0, errors: 0 });
+        source.attempted += 1;
+        if (attempt.ok) source.found += 1;
+        if (attempt.error) {
+          source.errors += 1;
+          if (queryReport.errors.length < 20) {
+            queryReport.errors.push({ number: record.number, title, source: attempt.source, error: attempt.error });
+          }
+        }
+      }
     }
     result.push(record);
+    if (queriedThisRecord && queryReport.attempted % 20 === 0) saveCheckpoint();
   }
 
-  const summary = {
-    generatedAt: new Date().toISOString(),
-    rows: result.length,
-    known: result.filter((item) => item.status === "known").length,
-    candidates: result.filter((item) => item.status === "candidate").length,
-    missing: result.filter((item) => item.status === "missing").length,
-  };
+  const summary = summaryFor(result);
   fs.writeFileSync(OUTPUT, `${JSON.stringify({ summary, books: result }, null, 2)}\n`);
   console.log(JSON.stringify(summary, null, 2));
 }

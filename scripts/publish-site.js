@@ -30,6 +30,8 @@ const FILES = [
   "scripts/set-zh-slot.js",
   "scripts/check-site.js",
   "scripts/publish-site.js",
+  "scripts/curate-zh-quality-pass.js",
+  "scripts/repair-zh-cover-failures.js",
   "scripts/review-zh-category.js",
   "scripts/review-zh-all.js",
 ];

@@ -359,12 +359,13 @@ function createBook(book) {
   link.href = book.workUrl || "#";
   link.setAttribute("aria-label", t.openLabel(book.title));
   link.title = t.openLabel(book.title);
-  link.classList.toggle("is-placeholder", !book.cover);
+  const cover = initialCover(book);
+  link.classList.toggle("is-placeholder", !cover);
   img.alt = t.coverAlt(book.title);
   img.referrerPolicy = "no-referrer";
-  if (book.cover) {
-    installCoverFallback(img, link, book);
-    img.src = book.cover;
+  if (cover) {
+    installCoverFallback(img, link, book, cover);
+    img.src = cover;
     img.loading = "lazy";
     img.decoding = "async";
   } else {
@@ -381,22 +382,31 @@ function proxiedCoverUrl(url) {
   return `https://images.weserv.nl/?url=${encodeURIComponent(url.replace(/^https?:\/\//, ""))}`;
 }
 
+function initialCover(book) {
+  const cover = book.cover || "";
+  if (lang === "zh" && /^https:\/\/img\d\.doubanio\.com\//.test(cover)) {
+    return proxiedCoverUrl(cover) || cover;
+  }
+  return cover;
+}
+
 function isbnFromUrl(url) {
   const match = String(url || "").match(/\/isbn\/([0-9Xx-]+)/i);
   return match ? match[1].replace(/[^0-9Xx]/g, "").toUpperCase() : "";
 }
 
-function coverFallbacks(book) {
+function coverFallbacks(book, currentCover) {
   const isbn = book.isbn || isbnFromUrl(book.workUrl) || isbnFromUrl(book.cover);
   return [
     ...(book.coverCandidates || []),
     isbn ? `https://covers.openlibrary.org/b/isbn/${isbn}-L.jpg` : "",
     proxiedCoverUrl(book.cover),
-  ].filter((url, index, all) => url && all.indexOf(url) === index && url !== book.cover);
+    book.cover,
+  ].filter((url, index, all) => url && all.indexOf(url) === index && url !== currentCover);
 }
 
-function installCoverFallback(img, link, book) {
-  const fallbacks = coverFallbacks(book);
+function installCoverFallback(img, link, book, currentCover) {
+  const fallbacks = coverFallbacks(book, currentCover);
   if (!fallbacks.length) return;
   img.dataset.fallbackCover = fallbacks[0];
   img.dataset.fallbackIndex = "0";

@@ -1,39 +1,8 @@
 {
-  "generatedAt": "2026-06-18T14:30:28.568Z",
+  "generatedAt": "2026-06-19T02:18:35.079Z",
   "rows": 1001,
-  "cached": 0,
-  "reused": 0,
-  "failed": 5,
-  "failedSamples": [
-    {
-      "number": "0001",
-      "title": "希腊古典神话",
-      "cover": "https://img1.doubanio.com/view/subject/l/public/s4505790.jpg",
-      "error": "https://img1.doubanio.com/view/subject/l/public/s4505790.jpg: EACCES; https://img1.doubanio.com/view/subject/l/public/s4505790.jpg: EACCES; https://img1.doubanio.com/view/subject/l/public/s4505790.jpg: EACCES; https://images.weserv.nl/?url=img1.doubanio.com%2Fview%2Fsubject%2Fl%2Fpublic%2Fs4505790.jpg: EACCES; https://images.weserv.nl/?url=img1.doubanio.com%2Fview%2Fsubject%2Fl%2Fpublic%2Fs4505790.jpg: EACCES; https://images.weserv.nl/?url=img1.doubanio.com%2Fview%2Fsubject%2Fl%2Fpublic%2Fs4505790.jpg: EACCES"
-    },
-    {
-      "number": "0002",
-      "title": "波波尔·乌",
-      "cover": "https://img9.doubanio.com/view/subject/l/public/s3103256.jpg",
-      "error": "https://img9.doubanio.com/view/subject/l/public/s3103256.jpg: EACCES; https://img9.doubanio.com/view/subject/l/public/s3103256.jpg: EACCES; https://img9.doubanio.com/view/subject/l/public/s3103256.jpg: EACCES; https://images.weserv.nl/?url=img9.doubanio.com%2Fview%2Fsubject%2Fl%2Fpublic%2Fs3103256.jpg: EACCES; https://images.weserv.nl/?url=img9.doubanio.com%2Fview%2Fsubject%2Fl%2Fpublic%2Fs3103256.jpg: EACCES; https://images.weserv.nl/?url=img9.doubanio.com%2Fview%2Fsubject%2Fl%2Fpublic%2Fs3103256.jpg: EACCES"
-    },
-    {
-      "number": "0003",
-      "title": "希腊神话（全三册）",
-      "cover": "https://img9.doubanio.com/view/subject/l/public/s34303154.jpg",
-      "error": "https://img9.doubanio.com/view/subject/l/public/s34303154.jpg: EACCES; https://img9.doubanio.com/view/subject/l/public/s34303154.jpg: EACCES; https://img9.doubanio.com/view/subject/l/public/s34303154.jpg: EACCES; https://images.weserv.nl/?url=img9.doubanio.com%2Fview%2Fsubject%2Fl%2Fpublic%2Fs34303154.jpg: EACCES; https://images.weserv.nl/?url=img9.doubanio.com%2Fview%2Fsubject%2Fl%2Fpublic%2Fs34303154.jpg: EACCES; https://images.weserv.nl/?url=img9.doubanio.com%2Fview%2Fsubject%2Fl%2Fpublic%2Fs34303154.jpg: EACCES"
-    },
-    {
-      "number": "0004",
-      "title": "希腊神话和传说",
-      "cover": "https://img9.doubanio.com/view/subject/l/public/s29827946.jpg",
-      "error": "https://img9.doubanio.com/view/subject/l/public/s29827946.jpg: EACCES; https://img9.doubanio.com/view/subject/l/public/s29827946.jpg: EACCES; https://img9.doubanio.com/view/subject/l/public/s29827946.jpg: EACCES; https://images.weserv.nl/?url=img9.doubanio.com%2Fview%2Fsubject%2Fl%2Fpublic%2Fs29827946.jpg: EACCES; https://images.weserv.nl/?url=img9.doubanio.com%2Fview%2Fsubject%2Fl%2Fpublic%2Fs29827946.jpg: EACCES; https://images.weserv.nl/?url=img9.doubanio.com%2Fview%2Fsubject%2Fl%2Fpublic%2Fs29827946.jpg: EACCES"
-    },
-    {
-      "number": "0005",
-      "title": "北欧神话全书",
-      "cover": "https://img3.doubanio.com/view/subject/l/public/s34371937.jpg",
-      "error": "https://img3.doubanio.com/view/subject/l/public/s34371937.jpg: EACCES; https://img3.doubanio.com/view/subject/l/public/s34371937.jpg: EACCES; https://img3.doubanio.com/view/subject/l/public/s34371937.jpg: EACCES; https://images.weserv.nl/?url=img3.doubanio.com%2Fview%2Fsubject%2Fl%2Fpublic%2Fs34371937.jpg: EACCES; https://images.weserv.nl/?url=img3.doubanio.com%2Fview%2Fsubject%2Fl%2Fpublic%2Fs34371937.jpg: EACCES; https://images.weserv.nl/?url=img3.doubanio.com%2Fview%2Fsubject%2Fl%2Fpublic%2Fs34371937.jpg: EACCES"
-    }
-  ]
+  "cached": 10,
+  "reused": 991,
+  "failed": 0,
+  "failedSamples": []
 }

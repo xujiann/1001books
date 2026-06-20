@@ -1,10 +1,10 @@
 {
   "summary": {
-    "generatedAt": "2026-06-20T14:35:40.497Z",
+    "generatedAt": "2026-06-20T19:59:57.793Z",
     "rows": 1001,
-    "known": 695,
+    "known": 775,
     "candidates": 80,
-    "missing": 216,
+    "missing": 136,
     "noIsbn": 10,
     "query": {
       "attempted": 80,
@@ -12376,10 +12376,9 @@
       "isbn": "9787508684512",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787508684512-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787508684512-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "“错误”的行为",
       "matchedUrl": "https://book.douban.com/subject/30128262/"
     },
@@ -12412,10 +12411,9 @@
       "isbn": "9787508622187",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787508622187-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787508622187-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "怪诞行为学",
       "matchedUrl": "https://book.douban.com/subject/4929844/"
     },
@@ -12431,10 +12429,9 @@
       "isbn": "9787807463726",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787807463726-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787807463726-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "艺术的故事",
       "matchedUrl": "https://book.douban.com/subject/3162991/"
     },
@@ -12450,10 +12447,9 @@
       "isbn": "9787549423439",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787549423439-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787549423439-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "《艺术的故事》笺注",
       "matchedUrl": "https://book.douban.com/subject/35616542/"
     },
@@ -12469,10 +12465,9 @@
       "isbn": "9787535685209",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787535685209-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787535685209-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "加德纳艺术通史",
       "matchedUrl": "https://book.douban.com/subject/30395789/"
     },
@@ -12488,10 +12483,9 @@
       "isbn": "9787802519329",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787802519329-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787802519329-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "艺术史的基本原理",
       "matchedUrl": "https://book.douban.com/subject/6834366/"
     },
@@ -12507,10 +12501,9 @@
       "isbn": "9787532280964",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787532280964-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787532280964-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "30天学会绘画",
       "matchedUrl": "https://book.douban.com/subject/20387173/"
     },
@@ -12526,10 +12519,9 @@
       "isbn": "9787544753883",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787544753883-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787544753883-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "梵高传",
       "matchedUrl": "https://book.douban.com/subject/26354318/"
     },
@@ -12545,10 +12537,9 @@
       "isbn": "9787301246894",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787301246894-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787301246894-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "西方美术史",
       "matchedUrl": "https://book.douban.com/subject/25969880/"
     },
@@ -12564,10 +12555,9 @@
       "isbn": "9787559837967",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787559837967-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787559837967-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "雕塑的故事",
       "matchedUrl": "https://book.douban.com/subject/35545378/"
     },
@@ -12583,10 +12573,9 @@
       "isbn": "9787108050373",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787108050373-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787108050373-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "雕塑与建筑",
       "matchedUrl": "https://book.douban.com/subject/26345947/"
     },
@@ -12602,10 +12591,9 @@
       "isbn": "9787547914991",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787547914991-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787547914991-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "罗丹艺术论",
       "matchedUrl": "https://book.douban.com/subject/27106005/"
     },
@@ -12621,10 +12609,9 @@
       "isbn": "9787108012159",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787108012159-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787108012159-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "米开朗琪罗传",
       "matchedUrl": "https://book.douban.com/subject/1046584/"
     },
@@ -12640,10 +12627,9 @@
       "isbn": "9787810190152",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787810190152-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787810190152-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "世界雕塑史",
       "matchedUrl": "https://book.douban.com/subject/3755148/"
     },
@@ -12659,10 +12645,9 @@
       "isbn": "9787108075291",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787108075291-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787108075291-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "中国雕塑史讲义",
       "matchedUrl": "https://book.douban.com/subject/36170410/"
     },
@@ -12678,10 +12663,9 @@
       "isbn": "9787533015886",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787533015886-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787533015886-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "希腊雕塑与绘画",
       "matchedUrl": "https://book.douban.com/subject/1286786/"
     },
@@ -12697,10 +12681,9 @@
       "isbn": "9787544721790",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787544721790-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787544721790-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "音乐之声",
       "matchedUrl": "https://book.douban.com/subject/10451761/"
     },
@@ -12716,10 +12699,9 @@
       "isbn": "9787103034088",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787103034088-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787103034088-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "西方音乐史",
       "matchedUrl": "https://book.douban.com/subject/5300275/"
     },
@@ -12735,10 +12717,9 @@
       "isbn": "9787300167442",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787300167442-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787300167442-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "世界音乐通史",
       "matchedUrl": "https://book.douban.com/subject/25841002/"
     },
@@ -12754,10 +12735,9 @@
       "isbn": "9787108037749",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787108037749-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787108037749-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "聆听音乐",
       "matchedUrl": "https://book.douban.com/subject/10590165/"
     },
@@ -12773,10 +12753,9 @@
       "isbn": "9787506287111",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787506287111-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787506287111-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "听音乐（插图第6版）",
       "matchedUrl": "https://book.douban.com/subject/3095037/"
     },
@@ -12792,10 +12771,9 @@
       "isbn": "9787552300932",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787552300932-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787552300932-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "古典音乐",
       "matchedUrl": "https://book.douban.com/subject/23781718/"
     },
@@ -12827,10 +12805,9 @@
       "isbn": "9787533964252",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787533964252-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787533964252-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "认识电影（修订第14版）",
       "matchedUrl": "https://book.douban.com/subject/35459568/"
     },
@@ -12846,10 +12823,9 @@
       "isbn": "9787106006747",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787106006747-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787106006747-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "电影语言",
       "matchedUrl": "https://book.douban.com/subject/1781283/"
     },
@@ -12865,10 +12841,9 @@
       "isbn": "9787559888297",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787559888297-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787559888297-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "世界电影史（第五版）",
       "matchedUrl": "https://book.douban.com/subject/37760997/"
     },
@@ -12884,10 +12859,9 @@
       "isbn": "9787550250918",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787550250918-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787550250918-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "电影艺术 : 形式与风格（插图修订第8版）",
       "matchedUrl": "https://book.douban.com/subject/26416255/"
     },
@@ -12903,10 +12877,9 @@
       "isbn": "9787100125147",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787100125147-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787100125147-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "电影是什么？",
       "matchedUrl": "https://book.douban.com/subject/26857567/"
     },
@@ -12938,10 +12911,9 @@
       "isbn": "9787510018046",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787510018046-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787510018046-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "电影史",
       "matchedUrl": "https://book.douban.com/subject/4202342/"
     },
@@ -12957,10 +12929,9 @@
       "isbn": "9787532750047",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787532750047-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787532750047-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "论摄影",
       "matchedUrl": "https://book.douban.com/subject/4282084/"
     },
@@ -12976,10 +12947,9 @@
       "isbn": "9787115564481",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787115564481-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787115564481-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "新摄影笔记",
       "matchedUrl": "https://book.douban.com/subject/35567282/"
     },
@@ -12995,10 +12965,9 @@
       "isbn": "9787535693341",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787535693341-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787535693341-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "此时此地",
       "matchedUrl": "https://book.douban.com/subject/35356133/"
     },
@@ -13014,10 +12983,9 @@
       "isbn": "9787300129129",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787300129129-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787300129129-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "明室",
       "matchedUrl": "https://book.douban.com/subject/6068109/"
     },
@@ -13033,10 +13001,9 @@
       "isbn": "9787559800565",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787559800565-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787559800565-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "摄影小史",
       "matchedUrl": "https://book.douban.com/subject/27608151/"
     },
@@ -13052,10 +13019,9 @@
       "isbn": "9787800170676",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787800170676-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787800170676-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "摄影构图学",
       "matchedUrl": "https://book.douban.com/subject/6892042/"
     },
@@ -13071,10 +13037,9 @@
       "isbn": "9787549558575",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787549558575-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787549558575-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "观看之道",
       "matchedUrl": "https://book.douban.com/subject/26427579/"
     },
@@ -13090,10 +13055,9 @@
       "isbn": "9787552303728",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787552303728-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787552303728-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "世界舞蹈史",
       "matchedUrl": "https://book.douban.com/subject/25855005/"
     },
@@ -13109,10 +13073,9 @@
       "isbn": "9787806673737",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787806673737-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787806673737-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "中国古代舞蹈史教程",
       "matchedUrl": "https://book.douban.com/subject/1163186/"
     },
@@ -13128,10 +13091,9 @@
       "isbn": "9787536039766",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787536039766-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787536039766-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "邓肯自传",
       "matchedUrl": "https://book.douban.com/subject/1118819/"
     },
@@ -13147,10 +13109,9 @@
       "isbn": "9787805539409",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787805539409-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787805539409-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "西方芭蕾史纲",
       "matchedUrl": "https://book.douban.com/subject/1212738/"
     },
@@ -13166,10 +13127,9 @@
       "isbn": "9787565841590",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787565841590-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787565841590-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "起跳准备：现代舞初学指南",
       "matchedUrl": "https://book.douban.com/subject/35580257/"
     },
@@ -13185,10 +13145,9 @@
       "isbn": "9787105080342",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787105080342-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787105080342-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "蒙古舞蹈美学概论",
       "matchedUrl": "https://book.douban.com/subject/2322126/"
     },
@@ -13204,10 +13163,9 @@
       "isbn": "9787800917448",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787800917448-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787800917448-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "当代西方舞蹈美学",
       "matchedUrl": "https://book.douban.com/subject/20308405/"
     },
@@ -13223,10 +13181,9 @@
       "isbn": "9787556711390",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787556711390-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787556711390-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "中国建筑史",
       "matchedUrl": "https://book.douban.com/subject/36659426/"
     },
@@ -13242,10 +13199,9 @@
       "isbn": "9784047033931",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9784047033931-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9784047033931-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "ギリシア神話入門―プロメテウスとオイディプスの謎を解く",
       "matchedUrl": "https://book.douban.com/subject/26281714/"
     },
@@ -13261,10 +13217,9 @@
       "isbn": "9787111338451",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787111338451-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787111338451-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "西方建筑史",
       "matchedUrl": "https://book.douban.com/subject/6394943/"
     },
@@ -13280,10 +13235,9 @@
       "isbn": "9787201186177",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787201186177-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787201186177-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "梁思成中国建筑史",
       "matchedUrl": "https://book.douban.com/subject/36218754/"
     },
@@ -13299,10 +13253,9 @@
       "isbn": "9787561819029",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787561819029-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787561819029-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "华夏意匠",
       "matchedUrl": "https://book.douban.com/subject/1319910/"
     },
@@ -13318,10 +13271,9 @@
       "isbn": "9787550255609",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787550255609-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787550255609-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "中国神话史",
       "matchedUrl": "https://book.douban.com/subject/26665789/"
     },
@@ -13337,10 +13289,9 @@
       "isbn": "9787112112937",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787112112937-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787112112937-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "外国建筑史",
       "matchedUrl": "https://book.douban.com/subject/4413246/"
     },
@@ -13356,10 +13307,9 @@
       "isbn": "9787553776354",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787553776354-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787553776354-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "包豪斯 1919—1933",
       "matchedUrl": "https://book.douban.com/subject/27001108/"
     },
@@ -13375,10 +13325,9 @@
       "isbn": "9787111616627",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787111616627-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787111616627-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "用户体验要素：以用户为中心的产品设计（原书第2版）",
       "matchedUrl": "https://book.douban.com/subject/33403542/"
     },
@@ -13394,10 +13343,9 @@
       "isbn": "9787111348665",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787111348665-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787111348665-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "用户体验要素",
       "matchedUrl": "https://book.douban.com/subject/6523997/"
     },
@@ -13413,10 +13361,9 @@
       "isbn": "9787568001533",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787568001533-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787568001533-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "设计方法与策略",
       "matchedUrl": "https://book.douban.com/subject/25927569/"
     },
@@ -13432,10 +13379,9 @@
       "isbn": "9787511717191",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787511717191-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787511717191-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "通用设计方法",
       "matchedUrl": "https://book.douban.com/subject/24869618/"
     },
@@ -13451,10 +13397,9 @@
       "isbn": "9787532298570",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787532298570-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787532298570-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "平面设计中的网格系统",
       "matchedUrl": "https://book.douban.com/subject/26806997/"
     },
@@ -13470,10 +13415,9 @@
       "isbn": "9787807465256",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787807465256-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787807465256-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "设计元素",
       "matchedUrl": "https://book.douban.com/subject/3335742/"
     },
@@ -13489,10 +13433,9 @@
       "isbn": "9787301343647",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787301343647-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787301343647-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "中国书法十五讲",
       "matchedUrl": "https://book.douban.com/subject/36545514/"
     },
@@ -13508,10 +13451,9 @@
       "isbn": "9787532590896",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787532590896-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787532590896-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "中国书法史",
       "matchedUrl": "https://book.douban.com/subject/32567083/"
     },
@@ -13527,10 +13469,9 @@
       "isbn": "9787513352383",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787513352383-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787513352383-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "中国书法通识",
       "matchedUrl": "https://book.douban.com/subject/36438835/"
     },
@@ -13546,10 +13487,9 @@
       "isbn": "9787534432248",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787534432248-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787534432248-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "书法有法",
       "matchedUrl": "https://book.douban.com/subject/5247986/"
     },
@@ -13565,10 +13505,9 @@
       "isbn": "9787532550845",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787532550845-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787532550845-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "中国书法理论史",
       "matchedUrl": "https://book.douban.com/subject/3746364/"
     },
@@ -13584,10 +13523,9 @@
       "isbn": "9787540481186",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787540481186-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787540481186-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "兰亭序杀局1",
       "matchedUrl": "https://book.douban.com/subject/27073559/"
     },
@@ -13603,10 +13541,9 @@
       "isbn": "9787101086812",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787101086812-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787101086812-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "书谱",
       "matchedUrl": "https://book.douban.com/subject/11632458/"
     },
@@ -13622,10 +13559,9 @@
       "isbn": "9787549502790",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787549502790-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787549502790-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "工艺之道",
       "matchedUrl": "https://book.douban.com/subject/5936610/"
     },
@@ -13641,10 +13577,9 @@
       "isbn": "9787568060271",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787568060271-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787568060271-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "写给设计师的工艺全书",
       "matchedUrl": "https://book.douban.com/subject/35101669/"
     },
@@ -13660,10 +13595,9 @@
       "isbn": "9787806271148",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787806271148-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787806271148-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "中国工艺美术史",
       "matchedUrl": "https://book.douban.com/subject/1045194/"
     },
@@ -13679,10 +13613,9 @@
       "isbn": "9787101151824",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787101151824-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787101151824-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "天工开物",
       "matchedUrl": "https://book.douban.com/subject/35479572/"
     },
@@ -13698,10 +13631,9 @@
       "isbn": "9787547734940",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787547734940-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787547734940-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "有温度的手艺",
       "matchedUrl": "https://book.douban.com/subject/34854871/"
     },
@@ -13717,10 +13649,9 @@
       "isbn": "9787508537047",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787508537047-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787508537047-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "中国手艺人",
       "matchedUrl": "https://book.douban.com/subject/27115194/"
     },
@@ -13736,10 +13667,9 @@
       "isbn": "9787508656151",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787508656151-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787508656151-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "匠人精神",
       "matchedUrl": "https://book.douban.com/subject/26652812/"
     },
@@ -13755,10 +13685,9 @@
       "isbn": "9787535681027",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787535681027-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787535681027-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "詹森艺术史（插图第7版）",
       "matchedUrl": "https://book.douban.com/subject/27129662/"
     },
@@ -13774,10 +13703,9 @@
       "isbn": "9787559633651",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787559633651-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787559633651-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "艺术通史",
       "matchedUrl": "https://book.douban.com/subject/34443586/"
     },
@@ -13793,10 +13721,9 @@
       "isbn": "9787208176393",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787208176393-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787208176393-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "中国艺术史",
       "matchedUrl": "https://book.douban.com/subject/35966113/"
     },
@@ -13812,10 +13739,9 @@
       "isbn": "9787535672100",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787535672100-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787535672100-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "写给大家的西方美术史",
       "matchedUrl": "https://book.douban.com/subject/26417490/"
     },
@@ -13831,10 +13757,9 @@
       "isbn": "9787521755558",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787521755558-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787521755558-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "艺术史",
       "matchedUrl": "https://book.douban.com/subject/36392193/"
     },
@@ -13850,10 +13775,9 @@
       "isbn": "9787513357654",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787513357654-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787513357654-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "西方艺术史",
       "matchedUrl": "https://book.douban.com/subject/37096875/"
     },
@@ -13869,10 +13793,9 @@
       "isbn": "9787805017297",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787805017297-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787805017297-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "世界艺术史（第7版修订本）",
       "matchedUrl": "https://book.douban.com/subject/26313884/"
     },
@@ -13888,10 +13811,9 @@
       "isbn": "9787806432808",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787806432808-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787806432808-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "随园食单",
       "matchedUrl": "https://book.douban.com/subject/1006884/"
     },
@@ -13907,10 +13829,9 @@
       "isbn": "9787532527250",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787532527250-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787532527250-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "闲情偶寄",
       "matchedUrl": "https://book.douban.com/subject/1007196/"
     },
@@ -13926,10 +13847,9 @@
       "isbn": "9787805749532",
       "isbnSource": "douban-subject",
       "coverCandidates": [
-        "https://covers.openlibrary.org/b/isbn/9787805749532-L.jpg",
         "https://covers.openlibrary.org/b/isbn/9787805749532-L.jpg"
       ],
-      "status": "candidate",
+      "status": "known",
       "matchedTitle": "美食家",
       "matchedUrl": "https://book.douban.com/subject/1415311/"
     },
@@ -13942,10 +13862,15 @@
       "author": "哈洛德·马基 (Harold McGee) / 2013",
       "workUrl": "https://book.douban.com/subject/24884999/",
       "currentCover": "covers/zh/0774.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787805015552",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787805015552-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787805015552-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "食物与厨艺",
+      "matchedUrl": "https://book.douban.com/subject/24884999/"
     },
     {
       "number": "0775",
@@ -13956,10 +13881,15 @@
       "author": "McGee, Harold / 2009",
       "workUrl": "https://book.douban.com/subject/4016036/",
       "currentCover": "covers/zh/0775.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9789868508842",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9789868508842-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9789868508842-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "食物與廚藝",
+      "matchedUrl": "https://book.douban.com/subject/4016036/"
     },
     {
       "number": "0776",
@@ -13970,10 +13900,15 @@
       "author": "蔡澜 / 2005",
       "workUrl": "https://book.douban.com/subject/1421803/",
       "currentCover": "covers/zh/0776.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787807131588",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787807131588-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787807131588-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "蔡澜谈吃",
+      "matchedUrl": "https://book.douban.com/subject/1421803/"
     },
     {
       "number": "0777",
@@ -13984,10 +13919,15 @@
       "author": "梁实秋 / 2005",
       "workUrl": "https://book.douban.com/subject/1227844/",
       "currentCover": "covers/zh/0777.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787807130574",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787807130574-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787807130574-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "雅舍谈吃",
+      "matchedUrl": "https://book.douban.com/subject/1227844/"
     },
     {
       "number": "0778",
@@ -13998,10 +13938,15 @@
       "author": "薄世宁 / 2019",
       "workUrl": "https://book.douban.com/subject/34842793/",
       "currentCover": "covers/zh/0778.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787521709605",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787521709605-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787521709605-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "薄世宁医学通识讲义",
+      "matchedUrl": "https://book.douban.com/subject/34842793/"
     },
     {
       "number": "0779",
@@ -14012,10 +13957,15 @@
       "author": "[美] 杰伊·巴塔查里亚 / 2019",
       "workUrl": "https://book.douban.com/subject/34910576/",
       "currentCover": "covers/zh/0779.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787559823106",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787559823106-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787559823106-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "健康经济学",
+      "matchedUrl": "https://book.douban.com/subject/34910576/"
     },
     {
       "number": "0780",
@@ -14026,10 +13976,15 @@
       "author": "[英] 尼克·利特尔黑尔斯 / 2017",
       "workUrl": "https://book.douban.com/subject/27023900/",
       "currentCover": "covers/zh/0780.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787550299658",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787550299658-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787550299658-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "睡眠革命",
+      "matchedUrl": "https://book.douban.com/subject/27023900/"
     },
     {
       "number": "0781",
@@ -14040,10 +13995,15 @@
       "author": "[英] 马修·沃克 / 2021",
       "workUrl": "https://book.douban.com/subject/35332778/",
       "currentCover": "covers/zh/0781.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787559648600",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787559648600-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787559648600-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "我们为什么要睡觉？",
+      "matchedUrl": "https://book.douban.com/subject/35332778/"
     },
     {
       "number": "0782",
@@ -14054,10 +14014,15 @@
       "author": "（美）约翰 · 瑞迪 / 2023",
       "workUrl": "https://book.douban.com/subject/36418973/",
       "currentCover": "covers/zh/0782.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787573906106",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787573906106-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787573906106-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "运动改造大脑",
+      "matchedUrl": "https://book.douban.com/subject/36418973/"
     },
     {
       "number": "0783",
@@ -14068,10 +14033,15 @@
       "author": "布朗蒂娜.卡莱.热尔曼 / 2015",
       "workUrl": "https://book.douban.com/subject/26355300/",
       "currentCover": "covers/zh/0783.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787530474624",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787530474624-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787530474624-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "运动解剖书",
+      "matchedUrl": "https://book.douban.com/subject/26355300/"
     },
     {
       "number": "0784",
@@ -14082,10 +14052,15 @@
       "author": "[德] 路易莎·施托默尔 绘 / 2022",
       "workUrl": "https://book.douban.com/subject/35643334/",
       "currentCover": "covers/zh/0784.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787571418991",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787571418991-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787571418991-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "身体由我",
+      "matchedUrl": "https://book.douban.com/subject/35643334/"
     },
     {
       "number": "0785",
@@ -14096,10 +14071,15 @@
       "author": "[美] 希恩 / 2007",
       "workUrl": "https://book.douban.com/subject/2340062/",
       "currentCover": "covers/zh/0785.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787801737038",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787801737038-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787801737038-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "跑步圣经",
+      "matchedUrl": "https://book.douban.com/subject/2340062/"
     },
     {
       "number": "0786",
@@ -14110,10 +14090,15 @@
       "author": "（美）尼可拉斯·罗曼诺夫 / 2014",
       "workUrl": "https://book.douban.com/subject/22993407/",
       "currentCover": "covers/zh/0786.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787513311427",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787513311427-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787513311427-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "跑步，该怎么跑？",
+      "matchedUrl": "https://book.douban.com/subject/22993407/"
     },
     {
       "number": "0787",
@@ -14124,10 +14109,15 @@
       "author": "[日] 村上春树 / 2024",
       "workUrl": "https://book.douban.com/subject/37021151/",
       "currentCover": "covers/zh/0787.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787573510396",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787573510396-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787573510396-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "当我谈跑步时，我谈些什么",
+      "matchedUrl": "https://book.douban.com/subject/37021151/"
     },
     {
       "number": "0788",
@@ -14138,10 +14128,15 @@
       "author": "2003",
       "workUrl": "https://book.douban.com/subject/3655665/",
       "currentCover": "covers/zh/0788.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787810685542",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787810685542-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787810685542-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "自由软件运动经典文献",
+      "matchedUrl": "https://book.douban.com/subject/3655665/"
     },
     {
       "number": "0789",
@@ -14152,10 +14147,15 @@
       "author": "徐国峰 / 2016",
       "workUrl": "https://book.douban.com/subject/27013547/",
       "currentCover": "covers/zh/0789.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787115433268",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787115433268-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787115433268-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "马拉松全方位科学训练指南",
+      "matchedUrl": "https://book.douban.com/subject/27013547/"
     },
     {
       "number": "0790",
@@ -14166,10 +14166,15 @@
       "author": "[英] 埃里克·赫尔姆斯 / 2020",
       "workUrl": "https://book.douban.com/subject/35170843/",
       "currentCover": "covers/zh/0790.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787115542175",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787115542175-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787115542175-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "肌肉与力量全书",
+      "matchedUrl": "https://book.douban.com/subject/35170843/"
     },
     {
       "number": "0791",
@@ -14180,10 +14185,15 @@
       "author": "[美] 马克·瑞比托 / 2016",
       "workUrl": "https://book.douban.com/subject/26863470/",
       "currentCover": "covers/zh/0791.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787530483886",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787530483886-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787530483886-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "力量训练基础",
+      "matchedUrl": "https://book.douban.com/subject/26863470/"
     },
     {
       "number": "0792",
@@ -14194,10 +14204,15 @@
       "author": "[美] 罗兰·米勒 / 2015",
       "workUrl": "https://book.douban.com/subject/26585065/",
       "currentCover": "covers/zh/0792.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787115390578",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787115390578-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787115390578-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "亲密关系（第6版）",
+      "matchedUrl": "https://book.douban.com/subject/26585065/"
     },
     {
       "number": "0793",
@@ -14208,10 +14223,15 @@
       "author": "[德] 弗里德里希·恩格斯 / 2018",
       "workUrl": "https://book.douban.com/subject/27194805/",
       "currentCover": "covers/zh/0793.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787010185071",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787010185071-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787010185071-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "家庭、私有制和国家的起源",
+      "matchedUrl": "https://book.douban.com/subject/27194805/"
     },
     {
       "number": "0794",
@@ -14222,10 +14242,15 @@
       "author": "[加]克里斯多福•孟 / 2015",
       "workUrl": "https://book.douban.com/subject/26363229/",
       "currentCover": "covers/zh/0794.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787540471194",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787540471194-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787540471194-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "亲密关系：通往灵魂的桥梁",
+      "matchedUrl": "https://book.douban.com/subject/26363229/"
     },
     {
       "number": "0795",
@@ -14236,10 +14261,15 @@
       "author": "[美] 罗纳德·B·阿德勒 / 2017",
       "workUrl": "https://book.douban.com/subject/27117578/",
       "currentCover": "covers/zh/0795.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787559608208",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787559608208-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787559608208-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "沟通的艺术（插图修订第15版）",
+      "matchedUrl": "https://book.douban.com/subject/27117578/"
     },
     {
       "number": "0796",
@@ -14250,10 +14280,15 @@
       "author": "[英]约翰•鲍尔比 / 2017",
       "workUrl": "https://book.douban.com/subject/27112680/",
       "currentCover": "covers/zh/0796.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787519229276",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787519229276-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787519229276-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "依恋三部曲•第一卷 依恋",
+      "matchedUrl": "https://book.douban.com/subject/27112680/"
     },
     {
       "number": "0797",
@@ -14264,10 +14299,15 @@
       "author": "武志红 / 2014",
       "workUrl": "https://book.douban.com/subject/25907227/",
       "currentCover": "covers/zh/0797.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787550230491",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787550230491-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787550230491-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "为何家会伤人（升级版）",
+      "matchedUrl": "https://book.douban.com/subject/25907227/"
     },
     {
       "number": "0798",
@@ -14278,10 +14318,15 @@
       "author": "（美）苏珊·福沃德博士 / 2018",
       "workUrl": "https://book.douban.com/subject/30199434/",
       "currentCover": "covers/zh/0798.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787569918816",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787569918816-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787569918816-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "原生家庭",
+      "matchedUrl": "https://book.douban.com/subject/30199434/"
     },
     {
       "number": "0799",
@@ -14292,10 +14337,15 @@
       "author": "[美] 艾·弗洛姆 / 2008",
       "workUrl": "https://book.douban.com/subject/3026879/",
       "currentCover": "covers/zh/0799.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787532745159",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787532745159-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787532745159-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "爱的艺术",
+      "matchedUrl": "https://book.douban.com/subject/3026879/"
     },
     {
       "number": "0800",
@@ -14306,10 +14356,15 @@
       "author": "盖瑞 • 查普曼 / 2018",
       "workUrl": "https://book.douban.com/subject/30282281/",
       "currentCover": "covers/zh/0800.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787210078951",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787210078951-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787210078951-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "爱的五种语言",
+      "matchedUrl": "https://book.douban.com/subject/30282281/"
     },
     {
       "number": "0801",
@@ -14320,10 +14375,15 @@
       "author": "[美] M·斯科特·派克 / 2007",
       "workUrl": "https://book.douban.com/subject/1775691/",
       "currentCover": "covers/zh/0801.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787807023777",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787807023777-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787807023777-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "少有人走的路",
+      "matchedUrl": "https://book.douban.com/subject/1775691/"
     },
     {
       "number": "0802",
@@ -14334,10 +14394,15 @@
       "author": "唐玲玲 / 1997",
       "workUrl": "https://book.douban.com/subject/1709493/",
       "currentCover": "covers/zh/0802.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787806177532",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787806177532-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787806177532-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "爱情经典",
+      "matchedUrl": "https://book.douban.com/subject/1709493/"
     },
     {
       "number": "0803",
@@ -14348,10 +14413,15 @@
       "author": "[美] 马歇尔·卢森堡 / 2009",
       "workUrl": "https://book.douban.com/subject/3533221/",
       "currentCover": "covers/zh/0803.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787508051000",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787508051000-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787508051000-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "非暴力沟通",
+      "matchedUrl": "https://book.douban.com/subject/3533221/"
     },
     {
       "number": "0804",
@@ -14362,10 +14432,15 @@
       "author": "[哥伦比亚] 加西亚·马尔克斯 / 2012",
       "workUrl": "https://book.douban.com/subject/10594787/",
       "currentCover": "covers/zh/0804.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787544258975",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787544258975-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787544258975-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "霍乱时期的爱情",
+      "matchedUrl": "https://book.douban.com/subject/10594787/"
     },
     {
       "number": "0805",
@@ -14395,10 +14470,15 @@
       "author": "[英] 阿兰·德波顿 / 2012",
       "workUrl": "https://book.douban.com/subject/11505636/",
       "currentCover": "covers/zh/0806.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787532758814",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787532758814-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787532758814-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "旅行的艺术",
+      "matchedUrl": "https://book.douban.com/subject/11505636/"
     },
     {
       "number": "0807",
@@ -14425,10 +14505,15 @@
       "author": "三毛 / 2003",
       "workUrl": "https://book.douban.com/subject/1060068/",
       "currentCover": "covers/zh/0808.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787806398791",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787806398791-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787806398791-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "撒哈拉的故事",
+      "matchedUrl": "https://book.douban.com/subject/1060068/"
     },
     {
       "number": "0809",
@@ -14471,10 +14556,15 @@
       "author": "黄石林 / 2012",
       "workUrl": "https://book.douban.com/subject/10727199/",
       "currentCover": "covers/zh/0811.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787509731529",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787509731529-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787509731529-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "旅行史话",
+      "matchedUrl": "https://book.douban.com/subject/10727199/"
     },
     {
       "number": "0812",
@@ -14485,10 +14575,15 @@
       "author": "【德】君特·西法特 / 2024",
       "workUrl": "https://book.douban.com/subject/36686248/",
       "currentCover": "covers/zh/0812.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787200170559",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787200170559-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787200170559-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "太空旅行史",
+      "matchedUrl": "https://book.douban.com/subject/36686248/"
     },
     {
       "number": "0813",
@@ -14499,10 +14594,15 @@
       "author": "克里斯托夫·布里克尔 / 2014",
       "workUrl": "https://book.douban.com/subject/26253814/",
       "currentCover": "covers/zh/0813.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787121232527",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787121232527-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787121232527-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "DK园艺百科全书",
+      "matchedUrl": "https://book.douban.com/subject/26253814/"
     },
     {
       "number": "0814",
@@ -14513,10 +14613,15 @@
       "author": "[英]蒙提·唐 / 2019",
       "workUrl": "https://book.douban.com/subject/33474978/",
       "currentCover": "covers/zh/0814.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787571402945",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787571402945-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787571402945-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "DK园艺智慧",
+      "matchedUrl": "https://book.douban.com/subject/33474978/"
     },
     {
       "number": "0815",
@@ -14527,10 +14632,15 @@
       "author": "[英] 凯西·威利斯 / 2019",
       "workUrl": "https://book.douban.com/subject/34901317/",
       "currentCover": "covers/zh/0815.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787519259136",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787519259136-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787519259136-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "植物博物馆",
+      "matchedUrl": "https://book.douban.com/subject/34901317/"
     },
     {
       "number": "0816",
@@ -14541,10 +14651,15 @@
       "author": "马炜梁 / 2021",
       "workUrl": "https://book.douban.com/subject/35317203/",
       "currentCover": "covers/zh/0816.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787301315439",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787301315439-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787301315439-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "植物的“智慧”",
+      "matchedUrl": "https://book.douban.com/subject/35317203/"
     },
     {
       "number": "0817",
@@ -14555,10 +14670,15 @@
       "author": "(美)弗朗西丝·霍奇森·伯内特 著 / 2014",
       "workUrl": "https://book.douban.com/subject/25880690/",
       "currentCover": "covers/zh/0817.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787544832953",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787544832953-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787544832953-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "秘密花园",
+      "matchedUrl": "https://book.douban.com/subject/25880690/"
     },
     {
       "number": "0818",
@@ -14569,10 +14689,15 @@
       "author": "（明）计成 / 2018",
       "workUrl": "https://book.douban.com/subject/30369546/",
       "currentCover": "covers/zh/0818.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787112197262",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787112197262-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787112197262-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "园冶",
+      "matchedUrl": "https://book.douban.com/subject/30369546/"
     },
     {
       "number": "0819",
@@ -14583,10 +14708,15 @@
       "author": "[捷克]卡雷尔·恰佩克 / 2019",
       "workUrl": "https://book.douban.com/subject/33461860/",
       "currentCover": "covers/zh/0819.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787571402976",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787571402976-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787571402976-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "园丁的一年",
+      "matchedUrl": "https://book.douban.com/subject/33461860/"
     },
     {
       "number": "0820",
@@ -14597,10 +14727,15 @@
       "author": "[英] 玛尼·弗格（Marnie Fogg） / 2016",
       "workUrl": "https://book.douban.com/subject/26782825/",
       "currentCover": "covers/zh/0820.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787508660844",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787508660844-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787508660844-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "时尚通史",
+      "matchedUrl": "https://book.douban.com/subject/26782825/"
     },
     {
       "number": "0821",
@@ -14611,10 +14746,15 @@
       "author": "华梅 / 2025",
       "workUrl": "https://book.douban.com/subject/37229973/",
       "currentCover": "covers/zh/0821.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787102094588",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787102094588-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787102094588-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "中外服装史",
+      "matchedUrl": "https://book.douban.com/subject/37229973/"
     },
     {
       "number": "0822",
@@ -14641,10 +14781,15 @@
       "author": "王受之 / 2002",
       "workUrl": "https://book.douban.com/subject/1368208/",
       "currentCover": "covers/zh/0823.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787500648321",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787500648321-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787500648321-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "世界时装史",
+      "matchedUrl": "https://book.douban.com/subject/1368208/"
     },
     {
       "number": "0824",
@@ -14655,10 +14800,15 @@
       "author": "[美]黛娜·托马斯（DanaThomas） / 2016",
       "workUrl": "https://book.douban.com/subject/26945934/",
       "currentCover": "covers/zh/0824.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787568902083",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787568902083-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787568902083-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "奢侈的",
+      "matchedUrl": "https://book.douban.com/subject/26945934/"
     },
     {
       "number": "0825",
@@ -14669,10 +14819,15 @@
       "author": "[美]艾莉森·弗里尔 / 2018",
       "workUrl": "https://book.douban.com/subject/27667591/",
       "currentCover": "covers/zh/0825.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787508683485",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787508683485-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787508683485-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "穿衣的基本",
+      "matchedUrl": "https://book.douban.com/subject/27667591/"
     },
     {
       "number": "0826",
@@ -14683,10 +14838,15 @@
       "author": "晓雪 / 2012",
       "workUrl": "https://book.douban.com/subject/10815590/",
       "currentCover": "covers/zh/0826.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787549511525",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787549511525-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787549511525-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "优雅",
+      "matchedUrl": "https://book.douban.com/subject/10815590/"
     },
     {
       "number": "0827",
@@ -14697,10 +14857,15 @@
       "author": "叶怡兰 / 2015",
       "workUrl": "https://book.douban.com/subject/26578184/",
       "currentCover": "covers/zh/0827.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787550256354",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787550256354-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787550256354-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "家的模样",
+      "matchedUrl": "https://book.douban.com/subject/26578184/"
     },
     {
       "number": "0828",
@@ -14711,10 +14876,15 @@
       "author": "[日] 无印良品 / 2010",
       "workUrl": "https://book.douban.com/subject/4746128/",
       "currentCover": "covers/zh/0828.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787563398362",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787563398362-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787563398362-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "家",
+      "matchedUrl": "https://book.douban.com/subject/4746128/"
     },
     {
       "number": "0829",
@@ -14725,10 +14895,15 @@
       "author": "[日] 增田奏 / 2013",
       "workUrl": "https://book.douban.com/subject/25732461/",
       "currentCover": "covers/zh/0829.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787544266741",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787544266741-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787544266741-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "住宅设计解剖书",
+      "matchedUrl": "https://book.douban.com/subject/25732461/"
     },
     {
       "number": "0830",
@@ -14739,10 +14914,15 @@
       "author": "増田奏 / 2010",
       "workUrl": "https://book.douban.com/subject/5245503/",
       "currentCover": "covers/zh/0830.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9789574428540",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9789574428540-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9789574428540-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "住宅設計解剖書",
+      "matchedUrl": "https://book.douban.com/subject/5245503/"
     },
     {
       "number": "0831",
@@ -14753,10 +14933,15 @@
       "author": "逯薇 / 2016",
       "workUrl": "https://book.douban.com/subject/26775466/",
       "currentCover": "covers/zh/0831.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787508660196",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787508660196-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787508660196-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "小家，越住越大",
+      "matchedUrl": "https://book.douban.com/subject/26775466/"
     },
     {
       "number": "0832",
@@ -14783,10 +14968,15 @@
       "author": "山下英子 / 2013",
       "workUrl": "https://book.douban.com/subject/24749465/",
       "currentCover": "covers/zh/0833.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787807639817",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787807639817-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787807639817-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "断舍离",
+      "matchedUrl": "https://book.douban.com/subject/24749465/"
     },
     {
       "number": "0834",
@@ -14797,10 +14987,15 @@
       "author": "海英 / 2021",
       "workUrl": "https://book.douban.com/subject/35652979/",
       "currentCover": "covers/zh/0834.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787303273171",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787303273171-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787303273171-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "礼仪中国",
+      "matchedUrl": "https://book.douban.com/subject/35652979/"
     },
     {
       "number": "0835",
@@ -14811,10 +15006,15 @@
       "author": "[美]埃默·托尔斯 / 2013",
       "workUrl": "https://book.douban.com/subject/20499985/",
       "currentCover": "covers/zh/0835.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787020096589",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787020096589-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787020096589-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "社交礼仪守则",
+      "matchedUrl": "https://book.douban.com/subject/20499985/"
     },
     {
       "number": "0836",
@@ -14825,10 +15025,15 @@
       "author": "李天纲 / 2019",
       "workUrl": "https://book.douban.com/subject/34781359/",
       "currentCover": "covers/zh/0836.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787300272542",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787300272542-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787300272542-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "中国礼仪之争",
+      "matchedUrl": "https://book.douban.com/subject/34781359/"
     },
     {
       "number": "0837",
@@ -14839,10 +15044,15 @@
       "author": "章岩 / 2015",
       "workUrl": "https://book.douban.com/subject/26699390/",
       "currentCover": "covers/zh/0837.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787221118325",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787221118325-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787221118325-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "礼尚往来：中国礼仪法则",
+      "matchedUrl": "https://book.douban.com/subject/26699390/"
     },
     {
       "number": "0838",
@@ -14853,10 +15063,15 @@
       "author": "[西汉]戴圣编纂 / 2022",
       "workUrl": "https://book.douban.com/subject/27601609/",
       "currentCover": "covers/zh/0838.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787101128567",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787101128567-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787101128567-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "礼记",
+      "matchedUrl": "https://book.douban.com/subject/27601609/"
     },
     {
       "number": "0839",
@@ -14867,10 +15082,15 @@
       "author": "[清] 孙希旦 撰 / 1989",
       "workUrl": "https://book.douban.com/subject/1042938/",
       "currentCover": "covers/zh/0839.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787101002164",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787101002164-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787101002164-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "礼记集解（全三册）",
+      "matchedUrl": "https://book.douban.com/subject/1042938/"
     },
     {
       "number": "0840",
@@ -14881,10 +15101,15 @@
       "author": "[東漢] 鄭玄 註 / 2019",
       "workUrl": "https://book.douban.com/subject/33449709/",
       "currentCover": "covers/zh/0840.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787308191500",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787308191500-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787308191500-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "禮記正義",
+      "matchedUrl": "https://book.douban.com/subject/33449709/"
     },
     {
       "number": "0841",
@@ -14895,10 +15120,15 @@
       "author": "[美] 史蒂芬·柯维 / 2018",
       "workUrl": "https://book.douban.com/subject/5325618/",
       "currentCover": "covers/zh/0841.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787500695356",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787500695356-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787500695356-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "高效能人士的七个习惯",
+      "matchedUrl": "https://book.douban.com/subject/5325618/"
     },
     {
       "number": "0842",
@@ -14909,10 +15139,15 @@
       "author": "[美] 詹姆斯·克利尔 / 2019",
       "workUrl": "https://book.douban.com/subject/34326931/",
       "currentCover": "covers/zh/0842.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787559632265",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787559632265-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787559632265-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "掌控习惯",
+      "matchedUrl": "https://book.douban.com/subject/34326931/"
     },
     {
       "number": "0843",
@@ -14923,10 +15158,15 @@
       "author": "约瑟夫·格雷尼（Joseph Grenny） / 2022",
       "workUrl": "https://book.douban.com/subject/36168599/",
       "currentCover": "covers/zh/0843.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787111714385",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787111714385-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787111714385-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "关键对话",
+      "matchedUrl": "https://book.douban.com/subject/36168599/"
     },
     {
       "number": "0844",
@@ -14937,10 +15177,15 @@
       "author": "英国DK出版社 / 2019",
       "workUrl": "https://book.douban.com/subject/33401362/",
       "currentCover": "covers/zh/0844.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787121355714",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787121355714-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787121355714-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "自我管理之书（全彩）",
+      "matchedUrl": "https://book.douban.com/subject/33401362/"
     },
     {
       "number": "0845",
@@ -14968,10 +15213,15 @@
       "author": "[美] 吉姆·洛尔 / 2015",
       "workUrl": "https://book.douban.com/subject/26606009/",
       "currentCover": "covers/zh/0846.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787515333564",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787515333564-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787515333564-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "精力管理",
+      "matchedUrl": "https://book.douban.com/subject/26606009/"
     },
     {
       "number": "0847",
@@ -14982,10 +15232,15 @@
       "author": "韦春喜 / 2010",
       "workUrl": "https://book.douban.com/subject/4712071/",
       "currentCover": "covers/zh/0847.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787500483083",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787500483083-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787500483083-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "宋前咏史诗史",
+      "matchedUrl": "https://book.douban.com/subject/4712071/"
     },
     {
       "number": "0848",
@@ -14996,10 +15251,15 @@
       "author": "[美]史蒂芬·平克 / 2015",
       "workUrl": "https://book.douban.com/subject/26380736/",
       "currentCover": "covers/zh/0848.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787213066559",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787213066559-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787213066559-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "语言本能",
+      "matchedUrl": "https://book.douban.com/subject/26380736/"
     },
     {
       "number": "0849",
@@ -15010,10 +15270,15 @@
       "author": "陈保亚 / 2016",
       "workUrl": "https://book.douban.com/subject/26963014/",
       "currentCover": "covers/zh/0849.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787040432640",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787040432640-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787040432640-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "语言学经典精读",
+      "matchedUrl": "https://book.douban.com/subject/26963014/"
     },
     {
       "number": "0850",
@@ -15024,10 +15289,15 @@
       "author": "[瑞士] 费尔迪南·德·索绪尔 / 1980",
       "workUrl": "https://book.douban.com/subject/1433192/",
       "currentCover": "covers/zh/0850.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787100020862",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787100020862-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787100020862-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "普通语言学教程",
+      "matchedUrl": "https://book.douban.com/subject/1433192/"
     },
     {
       "number": "0851",
@@ -15038,10 +15308,15 @@
       "author": "[美]诺姆·乔姆斯基 / 2022",
       "workUrl": "https://book.douban.com/subject/35888972/",
       "currentCover": "covers/zh/0851.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787100205733",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787100205733-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787100205733-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "句法结构(第2版)",
+      "matchedUrl": "https://book.douban.com/subject/35888972/"
     },
     {
       "number": "0852",
@@ -15052,10 +15327,15 @@
       "author": "[美] 塞缪尔·早川 / 2015",
       "workUrl": "https://book.douban.com/subject/26431646/",
       "currentCover": "covers/zh/0852.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787301259702",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787301259702-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787301259702-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "语言学的邀请",
+      "matchedUrl": "https://book.douban.com/subject/26431646/"
     },
     {
       "number": "0853",
@@ -15066,10 +15346,15 @@
       "author": "陈保亚 / 2023",
       "workUrl": "https://book.douban.com/subject/36505128/",
       "currentCover": "covers/zh/0853.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787301339725",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787301339725-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787301339725-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "语言学概论",
+      "matchedUrl": "https://book.douban.com/subject/36505128/"
     },
     {
       "number": "0854",
@@ -15080,10 +15365,15 @@
       "author": "黄伯荣、廖序东 / 2017",
       "workUrl": "https://book.douban.com/subject/27094402/",
       "currentCover": "covers/zh/0854.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787040465938",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787040465938-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787040465938-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "现代汉语（上册）（增订六版）",
+      "matchedUrl": "https://book.douban.com/subject/27094402/"
     },
     {
       "number": "0855",
@@ -15094,10 +15384,15 @@
       "author": "[瑞典] 林西莉 / 2017",
       "workUrl": "https://book.douban.com/subject/26966397/",
       "currentCover": "covers/zh/0855.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787108057037",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787108057037-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787108057037-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "汉字王国",
+      "matchedUrl": "https://book.douban.com/subject/26966397/"
     },
     {
       "number": "0856",
@@ -15108,10 +15403,15 @@
       "author": "吴宇虹 / 2006",
       "workUrl": "https://book.douban.com/subject/2048814/",
       "currentCover": "covers/zh/0856.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787207072283",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787207072283-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787207072283-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "古代两河流域楔形文字经典举要",
+      "matchedUrl": "https://book.douban.com/subject/2048814/"
     },
     {
       "number": "0857",
@@ -15122,10 +15422,15 @@
       "author": "（东汉）许慎 撰 / 1988",
       "workUrl": "https://book.douban.com/subject/1438098/",
       "currentCover": "covers/zh/0857.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787532504879",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787532504879-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787532504879-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "说文解字注",
+      "matchedUrl": "https://book.douban.com/subject/1438098/"
     },
     {
       "number": "0858",
@@ -15136,10 +15441,15 @@
       "author": "廖文豪 / 2013",
       "workUrl": "https://book.douban.com/subject/25774247/",
       "currentCover": "covers/zh/0858.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787550222151",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787550222151-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787550222151-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "汉字树1",
+      "matchedUrl": "https://book.douban.com/subject/25774247/"
     },
     {
       "number": "0859",
@@ -15150,10 +15460,15 @@
       "author": "[汉] 许慎 撰 / 1963",
       "workUrl": "https://book.douban.com/subject/1032967/",
       "currentCover": "covers/zh/0859.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787101002607",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787101002607-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787101002607-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "说文解字",
+      "matchedUrl": "https://book.douban.com/subject/1032967/"
     },
     {
       "number": "0860",
@@ -15164,10 +15479,15 @@
       "author": "唐兰 / 2005",
       "workUrl": "https://book.douban.com/subject/1322254/",
       "currentCover": "covers/zh/0860.jpg",
-      "isbn": "",
-      "isbnSource": "",
-      "coverCandidates": [],
-      "status": "missing"
+      "isbn": "9787532539031",
+      "isbnSource": "douban-subject",
+      "coverCandidates": [
+        "https://covers.openlibrary.org/b/isbn/9787532539031-L.jpg",
+        "https://covers.openlibrary.org/b/isbn/9787532539031-L.jpg"
+      ],
+      "status": "candidate",
+      "matchedTitle": "中国文字学",
+      "matchedUrl": "https://book.douban.com/subject/1322254/"
     },
     {
       "number": "0861",

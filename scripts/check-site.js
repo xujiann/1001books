@@ -6,7 +6,7 @@ const crypto = require("crypto");
 const ROOT = path.resolve(__dirname, "..");
 const DEPLOY = path.join(ROOT, ".deploy-main");
 const SKIP_DEPLOY = process.argv.includes("--no-deploy");
-const CORE_FILES = ["index.html", "app.js", "styles.css", "zh-books.js", ".nojekyll"];
+const CORE_FILES = ["index.html", "favicon.svg", "app.js", "styles.css", "zh-books.js", ".nojekyll"];
 const SCRIPT_FILES = [
   "scripts/audit-zh-title-duplicates.js",
   "scripts/audit-zh-version-duplicates.js",

@@ -10,6 +10,7 @@ const FILES = [
   ".nojekyll",
   ".github/workflows/cache-zh-covers.yml",
   "README.md",
+  "favicon.svg",
   "index.html",
   "app.js",
   "styles.css",
@@ -205,10 +206,10 @@ function main() {
   }
 
   console.log("Local hashes:");
-  ["index.html", "zh-books.js"].forEach((file) => console.log(`  ${file} ${sha(file, DEPLOY).toUpperCase()}`));
+  ["index.html", "favicon.svg", "zh-books.js"].forEach((file) => console.log(`  ${file} ${sha(file, DEPLOY).toUpperCase()}`));
 
   if (options.verify) {
-    return verifyOnline(["index.html", "zh-books.js"]);
+    return verifyOnline(["index.html", "favicon.svg", "zh-books.js"]);
   }
 }
 

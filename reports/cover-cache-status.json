@@ -1,16 +1,10 @@
 {
-  "generatedAt": "2026-06-27T15:12:01.197Z",
+  "generatedAt": "2026-06-27T19:46:44.115Z",
   "rows": 1001,
-  "cached": 8,
-  "reused": 987,
-  "failed": 6,
+  "cached": 4,
+  "reused": 995,
+  "failed": 2,
   "failedSamples": [
-    {
-      "number": "0034",
-      "title": "庄子寓言说解",
-      "cover": "https://img1.doubanio.com/view/subject/l/public/s33505158.jpg",
-      "error": "https://img1.doubanio.com/view/subject/l/public/s33505158.jpg: ETIMEDOUT; https://img1.doubanio.com/view/subject/l/public/s33505158.jpg: ETIMEDOUT; https://img1.doubanio.com/view/subject/l/public/s33505158.jpg: ETIMEDOUT; https://images.weserv.nl/?url=img1.doubanio.com%2Fview%2Fsubject%2Fl%2Fpublic%2Fs33505158.jpg: HTTP 404; https://images.weserv.nl/?url=img1.doubanio.com%2Fview%2Fsubject%2Fl%2Fpublic%2Fs33505158.jpg: HTTP 404; https://images.weserv.nl/?url=img1.doubanio.com%2Fview%2Fsubject%2Fl%2Fpublic%2Fs33505158.jpg: HTTP 404"
-    },
     {
       "number": "0035",
       "title": "韩非子集解",
@@ -22,24 +16,6 @@
       "title": "金枝",
       "cover": "https://covers.openlibrary.org/b/isbn/9787100098144-L.jpg",
       "error": "https://covers.openlibrary.org/b/isbn/9787100098144-L.jpg: invalid image response (200, no content-type, 43 bytes); https://covers.openlibrary.org/b/isbn/9787100098144-L.jpg: invalid image response (200, no content-type, 43 bytes); https://covers.openlibrary.org/b/isbn/9787100098144-L.jpg: invalid image response (200, no content-type, 43 bytes); https://images.weserv.nl/?url=covers.openlibrary.org%2Fb%2Fisbn%2F9787100098144-L.jpg: invalid image response (200, image/gif, 43 bytes); https://images.weserv.nl/?url=covers.openlibrary.org%2Fb%2Fisbn%2F9787100098144-L.jpg: invalid image response (200, image/gif, 43 bytes); https://images.weserv.nl/?url=covers.openlibrary.org%2Fb%2Fisbn%2F9787100098144-L.jpg: invalid image response (200, image/gif, 43 bytes)"
-    },
-    {
-      "number": "0105",
-      "title": "现象学的观念",
-      "cover": "https://img1.doubanio.com/view/subject/l/public/s33654428.jpg",
-      "error": "https://img1.doubanio.com/view/subject/l/public/s33654428.jpg: ETIMEDOUT; https://img1.doubanio.com/view/subject/l/public/s33654428.jpg: ETIMEDOUT; https://img1.doubanio.com/view/subject/l/public/s33654428.jpg: ETIMEDOUT; https://images.weserv.nl/?url=img1.doubanio.com%2Fview%2Fsubject%2Fl%2Fpublic%2Fs33654428.jpg: HTTP 404; https://images.weserv.nl/?url=img1.doubanio.com%2Fview%2Fsubject%2Fl%2Fpublic%2Fs33654428.jpg: HTTP 404; https://images.weserv.nl/?url=img1.doubanio.com%2Fview%2Fsubject%2Fl%2Fpublic%2Fs33654428.jpg: HTTP 404"
-    },
-    {
-      "number": "0543",
-      "title": "社会行动的结构",
-      "cover": "https://img1.doubanio.com/view/subject/l/public/s29088189.jpg",
-      "error": "https://img1.doubanio.com/view/subject/l/public/s29088189.jpg: ETIMEDOUT; https://img1.doubanio.com/view/subject/l/public/s29088189.jpg: ETIMEDOUT; https://img1.doubanio.com/view/subject/l/public/s29088189.jpg: ETIMEDOUT; https://images.weserv.nl/?url=img1.doubanio.com%2Fview%2Fsubject%2Fl%2Fpublic%2Fs29088189.jpg: HTTP 404; https://images.weserv.nl/?url=img1.doubanio.com%2Fview%2Fsubject%2Fl%2Fpublic%2Fs29088189.jpg: HTTP 404; https://images.weserv.nl/?url=img1.doubanio.com%2Fview%2Fsubject%2Fl%2Fpublic%2Fs29088189.jpg: HTTP 404"
-    },
-    {
-      "number": "0894",
-      "title": "终身成长",
-      "cover": "https://img1.doubanio.com/view/subject/l/public/s29559698.jpg",
-      "error": "https://img1.doubanio.com/view/subject/l/public/s29559698.jpg: ETIMEDOUT; https://img1.doubanio.com/view/subject/l/public/s29559698.jpg: ETIMEDOUT; https://img1.doubanio.com/view/subject/l/public/s29559698.jpg: ETIMEDOUT; https://images.weserv.nl/?url=img1.doubanio.com%2Fview%2Fsubject%2Fl%2Fpublic%2Fs29559698.jpg: HTTP 404; https://images.weserv.nl/?url=img1.doubanio.com%2Fview%2Fsubject%2Fl%2Fpublic%2Fs29559698.jpg: HTTP 404; https://images.weserv.nl/?url=img1.doubanio.com%2Fview%2Fsubject%2Fl%2Fpublic%2Fs29559698.jpg: HTTP 404"
     }
   ]
 }

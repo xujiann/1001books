@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-06-28T01:35:08.407Z",
+    "generatedAt": "2026-06-28T04:52:46.445Z",
     "rows": 1001,
     "known": 991,
     "candidates": 0,
@@ -4169,7 +4169,7 @@
       "title": "宋词三百首",
       "author": "武玉成，顾丛龙 注 / 2004",
       "workUrl": "https://book.douban.com/subject/1006967/",
-      "currentCover": "https://img2.doubanio.com/view/subject/l/public/s1131431.jpg",
+      "currentCover": "covers/zh/0233.jpg",
       "isbn": "9787532580934",
       "isbnSource": "douban-subject",
       "coverCandidates": [
@@ -4453,7 +4453,7 @@
       "title": "追忆似水年华",
       "author": "[法] 马塞尔·普鲁斯特 / 2012",
       "workUrl": "https://book.douban.com/subject/10779650/",
-      "currentCover": "https://img3.doubanio.com/view/subject/l/public/s10279533.jpg",
+      "currentCover": "covers/zh/0249.jpg",
       "isbn": "9787302560371",
       "isbnSource": "douban-subject",
       "coverCandidates": [
@@ -4543,7 +4543,7 @@
       "title": "卡夫卡短篇小说全集",
       "author": "[奥] 弗兰茨·卡夫卡 / 2021",
       "workUrl": "https://book.douban.com/subject/35728409/",
-      "currentCover": "https://img3.doubanio.com/view/subject/l/public/s34092282.jpg",
+      "currentCover": "covers/zh/0254.jpg",
       "isbn": "9787533956493",
       "isbnSource": "douban-subject",
       "coverCandidates": [
@@ -4579,7 +4579,7 @@
       "title": "都柏林人",
       "author": "[爱尔兰] 詹姆斯·乔伊斯 / 2010",
       "workUrl": "https://book.douban.com/subject/4908872/",
-      "currentCover": "https://img3.doubanio.com/view/subject/l/public/s4468482.jpg",
+      "currentCover": "covers/zh/0256.jpg",
       "isbn": "",
       "isbnSource": "",
       "coverCandidates": [],
@@ -4630,7 +4630,7 @@
       "title": "汪曾祺短篇小说选",
       "author": "汪曾祺 / 1982年2月",
       "workUrl": "https://book.douban.com/subject/3087961/",
-      "currentCover": "https://img9.doubanio.com/view/subject/l/public/s3106294.jpg",
+      "currentCover": "covers/zh/0259.jpg",
       "isbn": "9787533944636",
       "isbnSource": "douban-subject",
       "coverCandidates": [
@@ -4913,7 +4913,7 @@
       "title": "远方的鼓声",
       "author": "[日] 村上春树 / 2011",
       "workUrl": "https://book.douban.com/subject/6126821/",
-      "currentCover": "https://img1.doubanio.com/view/subject/l/public/s29494718.jpg",
+      "currentCover": "covers/zh/0275.jpg",
       "isbn": "9787101125863",
       "isbnSource": "douban-subject",
       "coverCandidates": [
@@ -4931,7 +4931,7 @@
       "title": "带一本书去巴黎",
       "author": "林达 / 2002",
       "workUrl": "https://book.douban.com/subject/1001885/",
-      "currentCover": "https://img3.doubanio.com/view/subject/l/public/s3186863.jpg",
+      "currentCover": "covers/zh/0276.jpg",
       "isbn": "9787533659493",
       "isbnSource": "douban-subject",
       "coverCandidates": [
@@ -5435,7 +5435,7 @@
       "title": "东周列国志",
       "author": "（明）冯梦龙 著 / 2009",
       "workUrl": "https://book.douban.com/subject/3409620/",
-      "currentCover": "https://img1.doubanio.com/view/subject/l/public/s3936229.jpg",
+      "currentCover": "covers/zh/0304.jpg",
       "isbn": "9787553803685",
       "isbnSource": "douban-subject",
       "coverCandidates": [
@@ -12625,7 +12625,7 @@
       "title": "中国雕塑史",
       "author": "梁思成 / 2023",
       "workUrl": "https://book.douban.com/subject/36397613/",
-      "currentCover": "https://img9.doubanio.com/view/subject/l/public/s34522824.jpg",
+      "currentCover": "covers/zh/0706.jpg",
       "isbn": "9787108075291",
       "isbnSource": "douban-subject",
       "coverCandidates": [
@@ -13179,7 +13179,7 @@
       "title": "建构文化研究",
       "author": "弗兰姆普敦 / 2007",
       "workUrl": "https://book.douban.com/subject/2247913/",
-      "currentCover": "https://img3.doubanio.com/view/subject/l/public/s28652137.jpg",
+      "currentCover": "covers/zh/0737.jpg",
       "isbn": "9784047033931",
       "isbnSource": "douban-subject",
       "coverCandidates": [
@@ -13251,7 +13251,7 @@
       "title": "空间的诗学",
       "author": "[法] 加斯东·巴什拉 / 2013",
       "workUrl": "https://book.douban.com/subject/24845883/",
-      "currentCover": "https://img3.doubanio.com/view/subject/l/public/s27007923.jpg",
+      "currentCover": "covers/zh/0741.jpg",
       "isbn": "9787550255609",
       "isbnSource": "douban-subject",
       "coverCandidates": [
@@ -13305,7 +13305,7 @@
       "title": "设计的觉醒",
       "author": "田中一光 / 2009.10",
       "workUrl": "https://book.douban.com/subject/4101013/",
-      "currentCover": "https://img3.doubanio.com/view/subject/l/public/s4073982.jpg",
+      "currentCover": "covers/zh/0744.jpg",
       "isbn": "9787111616627",
       "isbnSource": "douban-subject",
       "coverCandidates": [

@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-06T11:05:33.909Z",
+  "generatedAt": "2026-07-06T13:28:45.857Z",
   "rows": 1001,
-  "cached": 0,
-  "reused": 999,
+  "cached": 13,
+  "reused": 986,
   "failed": 2,
   "failedSamples": [
     {

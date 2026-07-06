@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generatedAt": "2026-07-06T13:28:14.804Z",
+    "generatedAt": "2026-07-06T15:55:28.752Z",
     "rows": 1001,
     "known": 991,
     "candidates": 0,
@@ -59,7 +59,7 @@
       "title": "埃及神话",
       "author": "[英] 加里·J.肖 / 2019",
       "workUrl": "https://book.douban.com/subject/30306723/",
-      "currentCover": "https://img3.doubanio.com/view/subject/l/public/s29951092.jpg",
+      "currentCover": "covers/zh/0003.jpg",
       "isbn": "9787572607974",
       "isbnSource": "douban-subject",
       "coverCandidates": [
@@ -113,7 +113,7 @@
       "title": "凯尔特神话全书",
       "author": "[英] 彼得·贝雷斯福德·埃利斯 / 2023",
       "workUrl": "https://book.douban.com/subject/35627750/",
-      "currentCover": "https://img1.doubanio.com/view/subject/l/public/s34371939.jpg",
+      "currentCover": "covers/zh/0006.jpg",
       "isbn": "9787572604225",
       "isbnSource": "douban-subject",
       "coverCandidates": [
@@ -481,7 +481,7 @@
       "title": "酉阳杂俎",
       "author": "段成式 / 2017",
       "workUrl": "https://book.douban.com/subject/27066229/",
-      "currentCover": "https://img1.doubanio.com/view/subject/l/public/s29931340.jpg",
+      "currentCover": "covers/zh/0027.jpg",
       "isbn": "9787532590612",
       "isbnSource": "douban-subject",
       "coverCandidates": [
@@ -1515,7 +1515,7 @@
       "title": "知识分子的鸦片",
       "author": "[法] 雷蒙·阿隆 / 2012",
       "workUrl": "https://book.douban.com/subject/10571622/",
-      "currentCover": "https://img3.doubanio.com/view/subject/l/public/s10482672.jpg",
+      "currentCover": "covers/zh/0085.jpg",
       "isbn": "9787544770637",
       "isbnSource": "douban-subject",
       "coverCandidates": [
@@ -1569,7 +1569,7 @@
       "title": "观念的力量",
       "author": "[英] 以赛亚·伯林 / 2019",
       "workUrl": "https://book.douban.com/subject/27060620/",
-      "currentCover": "https://img3.doubanio.com/view/subject/l/public/s32302027.jpg",
+      "currentCover": "covers/zh/0088.jpg",
       "isbn": "9787511709196",
       "isbnSource": "douban-subject",
       "coverCandidates": [
@@ -3239,7 +3239,7 @@
       "title": "印度文化史",
       "author": "巴沙姆 主编 / 1997年",
       "workUrl": "https://book.douban.com/subject/1552452/",
-      "currentCover": "https://img1.doubanio.com/view/subject/l/public/s26040410.jpg",
+      "currentCover": "covers/zh/0181.jpg",
       "isbn": "9787500414599",
       "isbnSource": "douban-subject",
       "coverCandidates": [
@@ -3506,7 +3506,7 @@
       "title": "抱朴子内篇校释",
       "author": "王明 / 2019",
       "workUrl": "https://book.douban.com/subject/1069378/",
-      "currentCover": "https://img3.doubanio.com/view/subject/l/public/s2926762.jpg",
+      "currentCover": "covers/zh/0196.jpg",
       "isbn": "9787101008791",
       "isbnSource": "douban-subject",
       "coverCandidates": [
@@ -5540,7 +5540,7 @@
       "title": "战国策",
       "author": "刘向 / 2003",
       "workUrl": "https://book.douban.com/subject/1107841/",
-      "currentCover": "https://img2.doubanio.com/view/subject/l/public/s1587941.jpg",
+      "currentCover": "covers/zh/0310.jpg",
       "isbn": "9787101088335",
       "isbnSource": "douban-subject",
       "coverCandidates": [
@@ -5773,7 +5773,7 @@
       "title": "追寻现代中国",
       "author": "[美]史景迁 / 2019",
       "workUrl": "https://book.douban.com/subject/30309611/",
-      "currentCover": "https://img3.doubanio.com/view/subject/l/public/s33626667.jpg",
+      "currentCover": "covers/zh/0323.jpg",
       "isbn": "9787532585625",
       "isbnSource": "douban-subject",
       "coverCandidates": [
@@ -6328,7 +6328,7 @@
       "title": "富兰克林自传",
       "author": "[美] 本杰明·富兰克林 / 2009",
       "workUrl": "https://book.douban.com/subject/4007097/",
-      "currentCover": "https://img3.doubanio.com/view/subject/l/public/s6459032.jpg",
+      "currentCover": "covers/zh/0354.jpg",
       "isbn": "9787220118043",
       "isbnSource": "douban-subject",
       "coverCandidates": [
@@ -15761,7 +15761,7 @@
       "title": "新华字典",
       "author": "中国社会科学院语言研究所 / 2020",
       "workUrl": "https://book.douban.com/subject/30459275/",
-      "currentCover": "https://img9.doubanio.com/view/subject/l/public/s33702805.jpg",
+      "currentCover": "covers/zh/0881.jpg",
       "isbn": "9787532657759",
       "isbnSource": "douban-subject",
       "coverCandidates": [
@@ -15869,7 +15869,7 @@
       "title": "童年的秘密",
       "author": "[意]蒙台梭利 / 2019",
       "workUrl": "https://book.douban.com/subject/34917698/",
-      "currentCover": "https://img1.doubanio.com/view/subject/l/public/s33650620.jpg",
+      "currentCover": "covers/zh/0887.jpg",
       "isbn": "9787301073698",
       "isbnSource": "douban-subject",
       "coverCandidates": [
@@ -16388,7 +16388,7 @@
       "title": "编辑力",
       "author": "（日）鹫尾贤也 / 2013",
       "workUrl": "https://book.douban.com/subject/24700185/",
-      "currentCover": "https://img3.doubanio.com/view/subject/l/public/s26592547.jpg",
+      "currentCover": "covers/zh/0916.jpg",
       "isbn": "9787300106915",
       "isbnSource": "douban-subject",
       "coverCandidates": [
